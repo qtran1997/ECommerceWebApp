@@ -12,13 +12,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <title>Login</title>
         <script type="text/javascript">
-            $(window).on('scroll',function() {
-                if($(window).scrollTop()) {
-                    $('nav').addClass('black');
-                } else {
-                    $('nav').removeClass('black');
-                }
-            })
             $(document).ready(function() {
                 $('.menu h4').click(function() {
                     $("nav ul").toggleClass("active");
@@ -27,32 +20,16 @@
         </script>
     </head>
     <body>
-        <img src="Images/water.jpeg" alt="" class="background">
 
         <!-- NAVBAR -->
         <div class="wrapper">
-            <div class="responsive-bar">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <div class="menu">
-                    <h4>Menu</h4>
-                </div>
-            </div>
-            <nav id="signup-nav">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="videos.php">Videos</a></li>
-                    <li><a href="contact.php">Contact Us</a></li> 
-                    <li><a href="login.php">Login</a></li> 
-                    <li><a href="signup.php" class="active">Sign up</a></li>               
-                </ul>   
-            </nav>
+             <?php  
+            include 'navloggedout.php';
+            ?>
         </div>
+        
+                <img src="Images/water.jpeg" alt="" class="background">
+
 
         <div class="userbox">
             <img src="Images/user.png" alt="user" class="user">
@@ -75,10 +52,7 @@
                 </div>
                 <input type="submit" name="" value="Register">
             </form>
-            <a href="login.html">Already have an account? Log In</a>
+            <a href="login.php">Already have an account? Log In</a>
         </div>
-
-
-
     </body>
 </html>

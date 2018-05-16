@@ -15,13 +15,6 @@
 
         <title>Login</title>
         <script type="text/javascript">
-            $(window).on('scroll',function() {
-                if($(window).scrollTop()) {
-                    $('nav').addClass('black');
-                } else {
-                    $('nav').removeClass('black');
-                }
-            })
             $(document).ready(function() {
                 $('.menu h4').click(function() {
                     $("nav ul").toggleClass("active");
@@ -35,33 +28,14 @@
 
         <!-- NAVBAR -->
         <div class="wrapper">
-            <div class="responsive-bar">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <div class="menu">
-                    <h4>Menu</h4>
-                </div>
-            </div>
-            <nav id="signup-nav">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="videos.php">Videos</a></li>
-                    <li><a href="contact.php" class="active">Contact Us</a></li> 
-                    <li><a href="login.php">Login</a></li> 
-                    <li><a href="signup.php">Sign up</a></li>               
-                </ul>   
-            </nav>
+                <?php  
+                include 'navloggedout.php';
+                ?>
         </div>
 
         <section class="contact-top">
 
         </section>
-
 
         <section class="contact-content">
             <h2>Have any questions? We'd love to help!</h2>
@@ -71,7 +45,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam saepe numquam harum illo laudantium omnis itaque similique provident minima magnam hic, voluptates neque expedita, nam eaque voluptatem qui. Amet porro ullam possimus voluptatibus voluptatum sit saepe cumque, esse eligendi repellat qui magni dicta nihil repudiandae, nulla, autem similique? Ipsam laboriosam ipsa delectus fuga quo quod blanditiis vel ratione architecto, ea omnis hic fugit, recusandae harum doloremque iure, illo magni quidem deserunt aliquid possimus. Dolorum unde corporis voluptas, error corrupti impedit velit vero deleniti asperiores! Praesentium cum sit, culpa reiciendis perferendis quibusdam est! Nostrum ducimus natus cumque fugit. Saepe perferendis adipisci cumque earum impedit magni qui! Doloribus quasi tempore dignissimos, ullam aspernatur velit odio voluptates facere, hic voluptate atque, quas, maiores. Rem, at praesentium sint ab quia dolorum exercitationem natus nulla.</p>
                 </div>
             </div>
-
 
             <div id="contact-right" class="card col-xl-6 col-lg-6 col-md-12 col-sm-12">
                 <div class="card-body">
@@ -111,17 +84,12 @@
                     </form>
                 </div>
             </div>
-
-
-
-
-
-
-
         </section>
 
-
-
-
+        <section class="footer">
+            <?php  
+            include 'footer.php';
+            ?>
+        </section>
     </body>
 </html>

@@ -12,13 +12,6 @@
         <link rel="stylesheet" type="text/css" href="index.css"> 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script type="text/javascript">
-            $(window).on('scroll',function() {
-                if($(window).scrollTop()) {
-                    $('nav').addClass('black');
-                } else {
-                    $('nav').removeClass('black');
-                }
-            })
             $(document).ready(function() {
                 $('.menu h4').click(function() {
                     $("nav ul").toggleClass("active");
@@ -32,91 +25,68 @@
 
         <!-- NAVBAR -->
         <div class="wrapper">
-            <div class="responsive-bar">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <div class="menu">
-                    <h4>Menu</h4>
-                </div>
-            </div>
-            <nav>
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <ul>
-                    <li><a href="index.php" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="videos.php">Videos</a></li>
-                    <li><a href="contact.php">Contact Us</a></li> 
-                    <li><a href="login.php">Login</a></li> 
-                    <li><a href="signup.php">Sign up</a></li>               
-                </ul>   
-            </nav>
+            <?php  
+            include 'navloggedout.php';
+            ?>
+        </div>
 
-            <!-- 3 SECTIONS FOR LOADING PAGE -->
-            <section class="top">
+        <!-- 3 SECTIONS FOR LOADING PAGE -->
+        <section class="top">
 
-            </section>
-            <section class="middle">
-                <hr class="w-100 clearfix d-md-none">
-                <h1>What is Lorem Ipsum?</h1>
-                <hr class="w-100 clearfix d-md-none">
+        </section>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+        <section class="middle">
+            <hr class="w-100 clearfix d-md-none">
+            <h1>Welcome to Sheek Clicker</h1>
+            <hr class="w-100 clearfix d-md-none">
 
-            </section>
-
-            <section class="footer">
-
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-                            <h1>Site Navigation</h1>
-                            <p>Hello</p>
-                            <p>Hello</p>
-                            <p>Hello</p>
-
-                            <hr class="w-100 clearfix d-md-none hidden-sm hidden-md hidden-lg">
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-                            <h1>About</h1>
-                            <p>Hello</p>
-                            <p>Hello</p>
-                            <p>Hello</p>
-
-                            <hr class="w-100 clearfix d-md-none hidden-sm hidden-md hidden-lg">
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-                            <h1>Help</h1>
-                            <p>Hello</p>
-                            <p>Hello</p>
-                            <p>Hello</p>
-
-                            <hr class="w-100 clearfix d-md-none hidden-sm hidden-md hidden-lg">
-                        </div>
-
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-                            <h1>Connect</h1>
-                            
-                            <p>Email Us: <a href="#">sheekmedia@gmail.com</a></p>
-                            <p>Give us a call! <a href="#">555-555-5555</a></p>
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <img src="Images/load.jpeg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wrap-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum, dignissimos quos officia quas consequuntur. Delectus rem pariatur dolor perferendis, nemo, praesentium libero eius debitis incidunt qui asperiores officiis similique.</p>
+                        <div class="wrap">
+                            <button class="btn btn-primary">CLICK ME</button>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wrap-text">
+                        <img src="Images/water.jpeg" class="img-responsive">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum, dignissimos quos officia quas consequuntur. Delectus rem pariatur dolor perferendis, nemo, praesentium libero eius debitis incidunt qui asperiores officiis similique.</p>
+                        <div class="wrap">
+                            <button class="btn btn-primary">CLICK ME</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
+
+
+        </section>
+
+        <section class="footer">
+            <?php  
+            include 'footer.php';
+            ?>
+
+        </section>
+
     </body>
 </html>

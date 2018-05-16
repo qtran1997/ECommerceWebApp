@@ -13,13 +13,6 @@
 
         <title>Login</title>
         <script type="text/javascript">
-            $(window).on('scroll',function() {
-                if($(window).scrollTop()) {
-                    $('nav').addClass('black');
-                } else {
-                    $('nav').removeClass('black');
-                }
-            })
             $(document).ready(function() {
                 $('.menu h4').click(function() {
                     $("nav ul").toggleClass("active");
@@ -28,32 +21,16 @@
         </script>
     </head>
     <body>
-        <img src="Images/water.jpeg" alt="" class="background">
 
         <!-- NAVBAR -->
         <div class="wrapper">
-            <div class="responsive-bar">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <div class="menu">
-                    <h4>Menu</h4>
-                </div>
-            </div>
-            <nav id="login-nav">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="videos.php">Videos</a></li>
-                    <li><a href="contact.php">Contact Us</a></li> 
-                    <li><a href="login.php" class="active">Login</a></li> 
-                    <li><a href="signup.php">Sign up</a></li>               
-                </ul>   
-            </nav>
+            <?php  
+            include 'navloggedout.php';
+            ?>
         </div>
+        
+                <img src="Images/water.jpeg" alt="" class="background">
+
 
         <div class="userbox">
             <img src="Images/user.png" alt="user" class="user">
@@ -69,10 +46,8 @@
                 <input type="submit" name="" value="Login">
             </form>
             <a href="#">Forgot Password?</a>
-            <a href="signup.html">Don't have an account? Sign up for free!</a>
+            <a href="signup.php">Don't have an account? Sign up for free!</a>
 
         </div>
-
-
     </body>
 </html>

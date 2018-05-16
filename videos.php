@@ -13,13 +13,6 @@
 
         <title>Login</title>
         <script type="text/javascript">
-            $(window).on('scroll',function() {
-                if($(window).scrollTop()) {
-                    $('nav').addClass('black');
-                } else {
-                    $('nav').removeClass('black');
-                }
-            })
             $(document).ready(function() {
                 $('.menu h4').click(function() {
                     $("nav ul").toggleClass("active");
@@ -31,27 +24,9 @@
 
     <body>
         <div class="wrapper">
-            <div class="responsive-bar">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <div class="menu">
-                    <h4>Menu</h4>
-                </div>
-            </div>
-            <nav id="signup-nav">
-                <div class="logo">
-                    <img src="Images/sheeklogo.jpg" alt="logo">
-                </div>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="videos.php" class="active">Videos</a></li>
-                    <li><a href="contact.php">Contact Us</a></li> 
-                    <li><a href="login.php">Login</a></li> 
-                    <li><a href="signup.php">Sign up</a></li>               
-                </ul>   
-            </nav>
+            <?php  
+            include 'navloggedout.php';
+            ?>
         </div>
 
         <!-- Video header picture... Surround all sections within div to prevent navbar failure-->
@@ -108,7 +83,13 @@
         </section>
 
 
+        <section class="footer">
 
+            <?php  
+            include 'footer.php';
+            ?>
+
+        </section>
 
 
 
