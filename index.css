@@ -1,0 +1,440 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Times New Roman, sans-serif;
+}
+
+/************************* HOME NAVBAR *************************/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+nav.black {
+    background: rgba(0,0,0,1);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav .logo  {
+    float: left;
+}
+
+nav .logo img {
+    height: 60px;
+    width: 300px;
+    transition: .5s;
+}
+
+nav.black .logo img {
+    height: 50px;
+    width: 250px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 14px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #fff;
+    padding: 5px 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+nav.black ul li a {
+    color: #fff;
+    line-height: 60px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #fff;
+    background: #29bea2;
+    text-decoration: none;
+}
+
+.responsive-bar {
+    display: none;
+}
+
+section.middle {
+    padding: 40px;
+}
+
+section.middle h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+section.middle p {
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+/************************* FOOTER *************************/
+section.footer {
+    padding: 25px 0;
+    position: relative;
+    background: #363636;
+    color: #fff;
+    border-top: 3px solid #29bea2;
+}
+
+section.footer h1 {
+    font-size: 27px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+section.footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 1050px) {
+
+    .responsive-bar {
+        display: block;
+        width: 100%;
+        height: 65px;
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    .responsive-bar .logo img {
+        float: left;
+        height: 40px;
+        padding-top: 3px;
+    }
+
+    .responsive-bar .menu h4 {
+        float: right;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 60px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    nav, nav.black {
+        background: #000;
+        height: 60px;
+        padding: 0;
+    }
+
+    nav .logo {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #000 ;
+        float: none;
+        display: none;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 40px !important;
+        color: #fff;
+    }
+
+    #contact-send {
+        background: #f00;
+    }
+}
+
+/************************* LOADING-TOP *************************/
+section.top {
+    width: 100%; 
+    height: 100vh;
+    background: url(Images/load.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/************************* LOGIN PAGE *************************/
+.background {
+    width: 100%; 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.userbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    min-height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.user {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    display: block;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    color: #262626;
+    font-size: 23px;
+}
+
+.userbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.userbox input[type="text"], .userbox input[type="password"], .userbox input[type="email"] {
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #262626;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.userbox input[type="text"]:focus,
+.userbox input[type="password"]:focus,
+.userbox input[type="email"]:focus {
+    border-bottom: 2px solid #f00;
+} 
+
+.inputbox {
+    position: relative;
+}
+
+.inputbox span {
+    position: absolute;
+    top: 10px;
+    color: #262626;
+}
+
+.userbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #29bea2;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.userbox a {
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+/************************* CONTACT PAGE *************************/
+section.contact-top {
+    width: 100%; 
+    height: 55vh;
+    background: url(Images/team.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+section.contact-content h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+#contact-left {
+    display: inline-block;
+    padding: 0;
+    margin-right: -5px;
+    vertical-align: top;
+    padding-left: 8%;
+    padding-right: 4%;
+    color: #888888;
+    border: none;
+}
+
+#contact-right {
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+    border: none;
+}
+
+#contact-right form {
+    display: block;
+    margin-top: 0em;  
+}
+
+#contact-right form .form-header {
+    font-size: 18px;
+}
+
+#contact-right form .input-body {
+    margin-bottom: 3%;
+    width: 600px;
+    height: 60px;
+    font-size: 16px;
+    padding-left: 2%;
+    border: 2px solid #262626;
+    border-radius: 8px;
+}
+
+#contact-right form textarea {
+    height: 100px !important;
+}
+
+#contact-right form h4 {
+    font-size: 16px;
+}
+
+#contact-send {
+    width: 600px;
+    height: 60px;
+    background: #29bea2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.star {
+    color: #29bea2;
+}
+
+/************************* VIDEOS PAGE *************************/
+section.video-top {
+    width: 100%; 
+    height: 50vh;
+    background: url(Images/teacher.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+section.video-content {
+    margin: 150px 0;
+}
+
+.video-box {
+    position: relative;
+    margin: 40px auto;
+    border-radius: 4px;
+    /*    overflow: hidden;*/
+    max-width: 300px;
+}
+
+.video-box button {
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    top: -40px;
+    left: 20px;
+    transform: translateY(-50%);
+    transform: translateX(50%);
+    text-align: center;
+    transition: .3s;
+    /*
+    background: #fff;
+    border: none;
+    */
+}
+
+.video-box:hover button {
+    top: 0;
+    margin: 0 auto;
+    background: #29bea2;  
+}
+
+/*
+.videoWrapper {
+position: relative;
+padding-bottom: 20%;  
+padding-top: 25px;
+height: 0;
+}
+
+.videoWrapper iframe {
+position: absolute;
+top: 5%;
+left: 0;
+width: 50%;
+height: 80%;
+}*/
