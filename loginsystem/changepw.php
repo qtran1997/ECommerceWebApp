@@ -15,13 +15,14 @@
         $sql = "UPDATE user SET pwd= '$pwd' WHERE id ='$index'";
         $result = mysqli_query($conn, $sql);
 
-//        echo $pwd;
-        header("Location: ../accountpage.php");
+        echo $pwd;
+//        header("Location: ../accountpage.php");
         
     }
     else
     {
-        header("Location: ../changepasswordpage.php?failure=1");
+        echo "FAILURE";
+//        header("Location: ../changepasswordpage.php?failure=1");
     }
     
     

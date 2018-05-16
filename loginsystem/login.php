@@ -14,16 +14,18 @@
     
     if(!$row = mysqli_fetch_assoc($result))
     {
-        header("Location: ../loginpage.php?failure=1");
+        echo "FAILURE";
+//        header("Location: ../loginpage.php?failure=1");
         
     }
     else
     {
+        echo "SUCCESS";
         $_SESSION['id'] = $row['id'];
         $_SESSION['uid'] = $row['uid'];
         $_SESSION['email'] = $row['email'];
     
-        header("Location: ../accountpage.php");
+//        header("Location: ../accountpage.php");
     }
     
     

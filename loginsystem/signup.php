@@ -26,10 +26,12 @@
         
 
         $_SESSION['id'] = $row['id'];
-        header("Location: ../index.php");
+        echo "SUCCESS";
+//        header("Location: ../index.php");
     }
     else
     {
-        header("Location: ../signuppage.php?failure=1");
+        echo "FAILURE";
+//        header("Location: ../signuppage.php?failure=1");
     }
 ?>
