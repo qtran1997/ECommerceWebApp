@@ -5,41 +5,37 @@ body {
 }
 
 /************************* HOME NAVBAR *************************/
-
-nav {
+.navbar {
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
     padding: 10px 50px;
     box-sizing: border-box;
-    background: #363636;
-    transition: .5s;
+    background: #101010;
+    transition: .7s;
 }
 
-nav .logo  {
+.navbar img {
     float: left;
-}
-
-nav .logo img {
     height: 50px;
     width: 250px;
+    margin: 0px;
 }
 
-nav ul {
-    float: right;
+.navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
-    font-size: 14px;
+    font-size: 13px;
 }
 
-nav ul li {
+.navbar ul li {
     list-style: none;
 }
 
-nav ul li a {
-    line-height: 60px;
+.navbar ul li a {
+    line-height: 50px;
     color: #fff;
     padding: 5px 12px;
     text-decoration: none;
@@ -47,15 +43,61 @@ nav ul li a {
     transition: .5s;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    color: #fff;
+.navbar ul li a:hover {
     background: #29bea2;
+    color: #fff;
     text-decoration: none;
 }
 
+.navbar button {
+    background: red;
+    color: #fff;
+}
+
+
+/*
+nav ul {
+float: right;
+margin: 0;
+padding: 0;
+display: flex;
+font-size: 14px;
+}
+
+nav ul li {
+list-style: none;
+}
+
+nav ul li a {
+line-height: 60px;
+color: #fff;
+padding: 5px 12px;
+text-decoration: none;
+text-transform: uppercase;
+transition: .5s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+color: #fff;
+background: #29bea2;
+text-decoration: none;
+}
+
 .responsive-bar {
-    display: none;
+display: none;
+}
+*/
+
+
+/************************* LOADING-TOP *************************/
+
+section.top {
+    width: 100%; 
+    height: 85vh;
+    background: url(Images/water.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
 section.middle {
@@ -63,10 +105,16 @@ section.middle {
 }
 
 section.middle h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #29bea2;
     margin: 0;
     padding: 0;
-    font-size: 2em;
     text-align: center;
+}
+
+section.middle #section-middle-header {
+    color: red;
 }
 
 section.middle img {
@@ -83,6 +131,7 @@ section.middle .wrap {
 
 section.middle .wrap-text {
     justify-content: center;
+    font-size: 17px;
 }
 
 section.middle p {
@@ -90,6 +139,16 @@ section.middle p {
     padding: 0;
     font-size: 1em;
     text-align: center;
+}
+
+section.middle .ptext {
+    margin: 40px 0 100px 0;
+}
+
+section.middle button {
+    background: #cb2027;
+    width: 30%;
+    color: #fff;
 }
 
 /************************* FOOTER *************************/
@@ -103,6 +162,8 @@ section.footer {
 
 section.footer h1 {
     font-size: 22px;
+    font-weight: bold;
+    color: #000080;
     margin-top: 5px;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -114,10 +175,27 @@ section.footer p {
 
 section.footer button {
     margin-top: 5px;
+    width: 50%;
+    background: #cb2027;
+    border: #000;
+    text-transform: uppercase;
+    opacity: 0.8;
+
+}
+
+section.footer button:hover {
+    background: #cb2027;
+    opacity: 1;
+}
+
+section.footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .fa {
     background: #fff;
+    margin: 3px;
 }
 
 section.footer .bottom-footer h3{
@@ -126,13 +204,15 @@ section.footer .bottom-footer h3{
     margin: 20px 0;
 }
 
+/************************* MEDIA QUERIES *************************/
+/*
 @media screen and (max-width: 1050px) {
 
     .responsive-bar {
         display: block;
         width: 100%;
         height: 2px;
-        background: #363636;
+        background: #101010;
         top: 0;
         left: 0;
         padding: 5px 20px;
@@ -157,7 +237,7 @@ section.footer .bottom-footer h3{
     }
 
     nav {
-        background: #363636;
+        background: #101010;
         height: 60px;
         padding: 0;
     }
@@ -171,7 +251,7 @@ section.footer .bottom-footer h3{
         width: 100%;
         top: 60px;
         left: 0;
-        background: #363636;
+        background: #101010;
         float: none;
         display: none;
     }
@@ -197,113 +277,115 @@ section.footer .bottom-footer h3{
         background: #f00;
     }
 }
-
-/************************* LOADING-TOP *************************/
-section.top {
-    width: 100%; 
-    height: 100vh;
-    background: url(Images/teacher.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
+*/
 
 /************************* LOGIN PAGE *************************/
-.background {
-    width: 100%; 
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
-    z-index: -1;
+
+.container-form {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    margin-bottom: 10%;
+    margin-top: 6%;
 }
 
-.userbox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    min-height: 200px;
+.header {
     background: #fff;
-    border-radius: 10px;
-    padding: 40px;
-    box-sizing: border-box;
-}
-
-.user {
-    margin: 0 auto;
-    margin-bottom: 12px;
-    display: block;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-}
-
-h3 {
-    margin: 0;
-    padding: 0 0 20px;
     text-align: center;
-    color: #262626;
-    font-size: 23px;
+    color: #000;
+    font-size: 17px;
 }
 
-.userbox input {
+.wrapper >* {
+    padding: 1rem;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px rgba(72,94,116,0.7);
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 22px;
+}
+
+.contact form label {
+    display: block;
+    font-size: 15px;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form input[type="email"],
+.contact form input[type="password"] {
+    background: #e7eeef;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+}
+
+.contact form input[type="email"]:focus,
+.contact form input[type="password"]:focus {
+    background: #fff9ba;
+    transition: 1s;
+}
+
+.contact form .privacy {
+    text-align: center;
+    font-size: 11px;
+}
+
+.contact form .full {
+    text-align: center;
+}
+
+.contact form .full a {
+    font-size: 13px;
+    color: #000080;
+}
+
+.contact form .privacy a {
+    color: #29bea2;
+}
+
+.contact form input {
     width: 100%;
-    margin-bottom: 20px;
+    padding: .5em;
 }
 
-.userbox input[type="text"], .userbox input[type="password"], .userbox input[type="email"] {
-    border: none;
-    border-bottom: 2px solid #262626;
-    outline: none;
-    height: 40px;
-    color: #262626;
-    background: transparent;
-    font-size: 16px;
-    padding-left: 20px;
-    box-sizing: border-box;
-}
-
-.userbox input[type="text"]:focus,
-.userbox input[type="password"]:focus,
-.userbox input[type="email"]:focus {
-    border-bottom: 2px solid #f00;
-} 
-
-.inputbox {
-    position: relative;
-}
-
-.inputbox span {
-    position: absolute;
-    top: 10px;
-    color: #262626;
-}
-
-.userbox input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    font-size: 16px;
-    background: #29bea2;
+.contact form button {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    background: #005b96;
     color: #fff;
-    border-radius: 20px;
-    cursor: pointer;
+    border: 0;
+    text-transform: uppercase;
 }
 
-.userbox a {
-    color: #262626;
-    font-size: 14px;
+/*
+.contact form button:hover, .contact form button:focus {
+background: #000080;
+cursor: pointer;
+outline: 0;
+transition: background-color 1s ease-out;
+}
+*/
+
+#signin-footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+#signin-footer a {
+    color: #29bea2;
     font-weight: bold;
     text-decoration: none;
-    text-align: center;
-    display: block;
 }
 
 /************************* CONTACT PAGE *************************/

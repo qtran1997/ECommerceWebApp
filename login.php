@@ -28,26 +28,61 @@
             include 'navloggedout.php';
             ?>
         </div>
-        
-                <img src="Images/water.jpeg" alt="" class="background">
 
+        <div class="container-form" id="signin-form">
+            <div class="wrapper animated slideInUp">
+                <div class="header">Log In to Your Account</div>
 
-        <div class="userbox">
-            <img src="Images/user.png" alt="user" class="user">
-            <form>
-                <div class="inputbox">
-                    <input type="text" name="" placeholder="Username" required>
-                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                <div class="contact">
+                    <form>
+                        <p> 
+                            <label for="email">Email</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" required>
+                        </p>
+                        <p class="full">
+                            <button>Log In</button>
+                            <a href="#">Forgot Password?</a>
+                        </p>
+                        <div class="privacy">
+                            By signing up, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="inputbox">
-                    <input type="password" name="" placeholder="Password" required>
-                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                </div>
-                <input type="submit" name="" value="Login">
-            </form>
-            <a href="#">Forgot Password?</a>
-            <a href="signup.php">Don't have an account? Sign up for free!</a>
-
+                <div class="footer" id="signin-footer">Don't have an account?<a href="#" class="link"> Sign Up</a></div>
+            </div>
         </div>
+
+
+        <section class="footer">
+            <?php  
+            include 'footer.php';
+            ?>
+
+        </section>
+
+        <!--
+<div class="userbox">
+<img src="Images/user.png" alt="user" class="user">
+<form>
+<div class="inputbox">
+<input type="text" name="" placeholder="Username" required>
+<span><i class="fa fa-user" aria-hidden="true"></i></span>
+</div>
+<div class="inputbox">
+<input type="password" name="" placeholder="Password" required>
+<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+</div>
+<input type="submit" name="" value="Login">
+</form>
+<a href="#">Forgot Password?</a>
+<a href="signup.php">Don't have an account? Sign up for free!</a>
+</div>
+</div>
+-->
+
     </body>
 </html>
