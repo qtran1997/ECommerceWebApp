@@ -37,7 +37,7 @@
             <?php
             $fname = $_SESSION['fname'];
             echo '<li class="nav-item">
-                        <a class="nav-link" href="contact.php"> Hello, ' . $fname . '!</a>
+                        <a class="nav-link" href="accountpage.php"> Hello, ' . $fname . '!</a>
                         </li>'
             ?>
             <li class="nav-item">

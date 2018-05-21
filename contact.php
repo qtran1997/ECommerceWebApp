@@ -96,13 +96,11 @@ session_start();
             </div>
         </section>
 
-<!--
         <section class="footer">
             <?php  
             include 'footer.php';
             ?>
         </section>
--->
 
     </body>
 </html>

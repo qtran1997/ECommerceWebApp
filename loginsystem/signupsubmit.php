@@ -43,7 +43,6 @@
         
 
         $_SESSION['id'] = $row['id'];
-        echo "hello";
         header("Location: ../index.php");
     }
     else

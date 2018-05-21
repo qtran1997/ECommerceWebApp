@@ -1,7 +1,11 @@
+html{
+    overflow-y:scroll;
+}
 body {
     margin: 0;
     padding: 0;
     font-family: Times New Roman, sans-serif;
+/*    overflow-y: scroll;*/
 }
 
 /************************* NAVBAR *************************/
@@ -35,7 +39,6 @@ body {
     padding: 5px 12px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: .5s;
     background:none;
     border:none;
 }
@@ -123,6 +126,8 @@ section.footer {
     background: #363636;
     color: #fff;
     border-top: 3px solid #29bea2;
+    bottom: 0;
+    left:0;
 }
 
 section.footer h1 {
@@ -197,7 +202,7 @@ section.contact-content h2 {
 }
 
 section.contact-content {
-    height: 500px;
+/*    height: 600px;*/
 }
 
 #contact-left {
