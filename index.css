@@ -1,3 +1,7 @@
+html {
+overflow-y: scroll;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -35,7 +39,6 @@ body {
     padding: 5px 12px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: .5s;
     background:none;
     border:none;
 }
@@ -447,7 +450,8 @@ section.contact-content {
 
 /************************* END OF CHECKOUT *************************/
 
-#account {
+.heading {
+    font-size: 25px;
 }
 
 
@@ -455,8 +459,8 @@ section.contact-content {
     color: #000;
 }
 
-.change-info {
-    border: 2px solid black;
+.account-profile input {
+    width: 240px;
 }
 
 
