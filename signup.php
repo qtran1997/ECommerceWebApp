@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,7 +25,14 @@
         <!-- NAVBAR -->
         <div class="nav-wrapper">
             <?php  
-            include 'navloggedout.php';
+            if(isset($_SESSION['id']))
+            {
+                include 'navloggedin.php';
+            }
+            else
+            {
+                include 'navloggedout.php';
+            }
             ?>
         </div>
 
@@ -30,14 +40,41 @@
             <div class="wrapper">
                 <div class="header">Signup for Exclusive Content</div>
                 <div class="contact">
-                    <form>
+                    <form action="loginsystem/signupsubmit.php" method="POST">
+                        <?php
+                        $failureE = "";
+                        if(empty($_GET['failureE']))
+                        {
+
+                        }
+                        else
+                        {
+                            $failureE = $_GET['failure'];
+                        }
+                        if($failureE == 1)
+                        {
+                            echo "<p class='error'>Your email or login is already used!</p>";
+                        }
+                        $failureP = "";
+                        if(empty($_GET['failureE']))
+                        {
+
+                        }
+                        else
+                        {
+                            $failureP = $_GET['failureP'];
+                        }
+                        if($failureP == 1 and $failureE != 1)
+                        {
+                            echo "<p class='error'>Your passwords do not match!</p>";
+                        }
+                        ?>
                         <p> 
-                            <label for="first">First Name</label>
-                            <input type="text" name="first" required>
-                        </p>
-                        <p> 
-                            <label for="last">Last Name</label>
-                            <input type="text" name="last" required>
+                            <label for="full-name">First Name</label>
+                            <input type="text" name="fname" required>
+                        </p><p> 
+                        <label for="full-name">Last Name</label>
+                        <input type="text" name="lname" required>
                         </p>
                         <p> 
                             <label for="email">Email</label>
@@ -45,11 +82,11 @@
                         </p>
                         <p>
                             <label for="password">Password</label>
-                            <input type="password" name="password" required>
+                            <input type="password" name="pwd1" required>
                         </p>
                         <p>
                             <label for="password">Re-Enter Password</label>
-                            <input type="password" name="password" required>
+                            <input type="password" name="pwd2" required>
                         </p>
                         <p class="full">
                             <button>Sign Up</button>

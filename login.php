@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -24,7 +27,15 @@
         <!-- NAVBAR -->
         <div class="nav-wrapper">
             <?php  
-            include 'navloggedout.php';
+            if(isset($_SESSION['id']))
+            {
+                include 'navloggedin.php';
+            }
+            else
+            {
+                include 'navloggedout.php';
+            }
+            
             ?>
         </div>
 
@@ -33,14 +44,29 @@
                 <div class="header">Log In to Your Account</div>
 
                 <div class="contact">
-                    <form>
+                    <form action="loginsystem/loginsubmit.php" method="POST">
+                        <?php
+                        $failure = "";
+                        if(empty($_GET['failure']))
+                        {
+
+                        }
+                        else
+                        {
+                            $failure = $_GET['failure'];
+                        }
+                        if($failure == 1)
+                        {
+                            echo "<p class='error'>Your information is incorrect!</p>";
+                        }
+                        ?>
                         <p> 
                             <label for="email">Email</label>
                             <input type="email" name="email" required>
                         </p>
                         <p>
                             <label for="password">Password</label>
-                            <input type="password" name="password" required>
+                            <input type="password" name="pwd" required>
                         </p>
                         <p class="full">
                             <button>Log In</button>
