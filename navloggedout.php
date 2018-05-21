@@ -45,21 +45,3 @@
 </nav>
 
 
-
-
-
-<!--
-<nav>
-<div class="logo">
-<a href="#"><img src="Images/sheeklogo.jpg" alt="logo"></a>
-</div>
-<ul>
-<li><a href="index.php">Home</a></li>
-<li><a href="videos.php">Videos</a></li>
-<li><a href="contact.php">Contact Us</a></li> 
-<li><a href="login.php">Login</a></li> 
-<li><a href="signup.php">Sign up</a></li>               
-</ul>   
-</nav>    
--->
-

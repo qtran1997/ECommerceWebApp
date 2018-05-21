@@ -20,7 +20,7 @@
     <body id="formscreen">
 
         <!-- NAVBAR -->
-        <div class="wrapper">
+        <div class="nav-wrapper">
             <?php  
             include 'navloggedout.php';
             ?>
