@@ -448,16 +448,16 @@ section.contact-content {
 /************************* END OF CHECKOUT *************************/
 
 #account {
-    background: #d3d3d3    ;
 }
 
 
 .account-profile {
-    background: black;
-    color: #fff;
+    color: #000;
 }
 
-
+.change-info {
+    border: 2px solid black;
+}
 
 
 

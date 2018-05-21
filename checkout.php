@@ -29,11 +29,6 @@
                             <img src="Images/expiration.png" alt="">
                             <img src="Images/cvv.jpg" alt="">
                         </div>
-                        <!--
-<div class="col-lg-6 col-md-6">
-<h5>TOTAL: $99.99</h5>
-</div>
--->
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
