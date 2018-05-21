@@ -35,6 +35,7 @@
 
         <section class="video-content">
 
+<!--
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -70,6 +71,7 @@
                     </div>
                 </div>
             </div>
+-->
 
 
 
@@ -77,6 +79,7 @@
         </section>
 
 
+<!--
         <section class="footer">
 
             <?php  
@@ -84,6 +87,7 @@
             ?>
 
         </section>
+-->
 
 
 
