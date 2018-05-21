@@ -30,18 +30,20 @@ body {
     list-style: none;
 }
 
-.navbar ul li a {
+.nav-link {
     line-height: 30px;
-    color: #fff;
+    color: #fff !important;
     padding: 5px 12px;
     text-decoration: none;
     text-transform: uppercase;
     transition: .5s;
+    background:none;
+    border:none;
 }
 
-.navbar ul li a:hover {
+.nav-link:hover {
     background: #29bea2;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
 }
 
@@ -293,13 +295,18 @@ section.contact-content {
     font-size: 17px;
     text-transform: uppercase;
     background: #005b96;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .wrapper >* {
     padding: 1.3rem;
+    
 }
 
 .wrapper {
+     border-radius:15px;
+    border: 1px black solid;
     box-shadow: 0 0 20px rgba(72,94,116,0.7);
 }
 
@@ -373,6 +380,8 @@ section.contact-content {
 }
 
 #signin-footer {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     background: #005b96;
     color: #fff;
     text-align: center;
@@ -382,6 +391,11 @@ section.contact-content {
     color: #000;
     font-weight: bold;
     text-decoration: none;
+}
+
+.error{
+    font-weight:bold;
+    color:red;
 }
 
 /************************* END OF LOGIN/SIGNUP *************************/

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,9 +28,16 @@
     <body>
 
         <!-- NAVBAR -->
-        <div class="wrapper">
+        <div class="nav-wrapper">
             <?php  
-            include 'navloggedout.php';
+            if(isset($_SESSION['id']))
+            {
+                include 'navloggedin.php';
+            }
+            else
+            {
+                include 'navloggedout.php';
+            }
             ?>
         </div>
 
