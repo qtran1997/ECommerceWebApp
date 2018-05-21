@@ -3,14 +3,12 @@
     <head>
         <meta charset="UTF-8" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="index.css"> 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <title>Login</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <title>Sign-Up</title>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('.menu h4').click(function() {
@@ -23,36 +21,53 @@
 
         <!-- NAVBAR -->
         <div class="wrapper">
-             <?php  
+            <?php  
             include 'navloggedout.php';
             ?>
         </div>
-        
-                <img src="Images/water.jpeg" alt="" class="background">
 
-
-        <div class="userbox">
-            <img src="Images/user.png" alt="user" class="user">
-            <form>
-                <div class="inputbox">
-                    <input type="text" name="" placeholder="Username" required>
-                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+        <div class="container-form" id="signup-form">
+            <div class="wrapper">
+                <div class="header">Signup for Exclusive Content</div>
+                <div class="contact">
+                    <form>
+                        <p> 
+                            <label for="first">First Name</label>
+                            <input type="text" name="first" required>
+                        </p>
+                        <p> 
+                            <label for="last">Last Name</label>
+                            <input type="text" name="last" required>
+                        </p>
+                        <p> 
+                            <label for="email">Email</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" required>
+                        </p>
+                        <p>
+                            <label for="password">Re-Enter Password</label>
+                            <input type="password" name="password" required>
+                        </p>
+                        <p class="full">
+                            <button>Sign Up</button>
+                        </p>
+                        <div class="privacy">
+                            By signing up, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="inputbox">
-                    <input type="email" name="" placeholder="contact@example.com" required>
-                    <span><i class="fa fa-laptop" aria-hidden="true"></i></span>
-                </div>
-                <div class="inputbox">
-                    <input type="password" name="" placeholder="Password" required>
-                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                </div>
-                <div class="inputbox">
-                    <input type="password" name="" placeholder="Confirm password" required>
-                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                </div>
-                <input type="submit" name="" value="Register">
-            </form>
-            <a href="login.php">Already have an account? Log In</a>
+                <div class="footer" id="signin-footer">Already have an account?<a href="login.php" class="link"> Log in</a></div>
+            </div>
         </div>
+
+        <section class="footer">
+            <?php  
+            include 'footer.php';
+            ?>
+        </section>
+
     </body>
 </html>

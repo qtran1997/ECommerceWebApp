@@ -9,25 +9,21 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
     padding: 10px 50px;
-    box-sizing: border-box;
-    background: #101010;
-    transition: .7s;
+    background: #404040;
 }
 
 .navbar img {
-    float: left;
     height: 50px;
     width: 250px;
-    margin: 0px;
 }
 
 .navbar ul {
-    margin: 0;
+    margin-top: 12px;
     padding: 0;
-    display: flex;
-    font-size: 13px;
+    font-size: 14px;
+    text-align: center;
+    float: right;
 }
 
 .navbar ul li {
@@ -35,7 +31,7 @@ body {
 }
 
 .navbar ul li a {
-    line-height: 50px;
+    line-height: 30px;
     color: #fff;
     padding: 5px 12px;
     text-decoration: none;
@@ -49,79 +45,40 @@ body {
     text-decoration: none;
 }
 
-.navbar button {
-    background: red;
-    color: #fff;
-}
-
-
-/*
-nav ul {
-float: right;
-margin: 0;
-padding: 0;
-display: flex;
-font-size: 14px;
-}
-
-nav ul li {
-list-style: none;
-}
-
-nav ul li a {
-line-height: 60px;
-color: #fff;
-padding: 5px 12px;
-text-decoration: none;
-text-transform: uppercase;
-transition: .5s;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-color: #fff;
-background: #29bea2;
-text-decoration: none;
-}
-
-.responsive-bar {
-display: none;
-}
-*/
-
-
 /************************* LOADING-TOP *************************/
 
 section.top {
     width: 100%; 
-    height: 85vh;
+    height: 100vh;
     background: url(Images/water.jpeg);
     background-size: cover;
     background-position: center;
 }
 
-section.middle {
-    padding: 10px;
+/*----------------------------------------------*/
+section.middle-first {
+    padding: 2.5rem;
+    background: #e5e6eb;
 }
 
-section.middle h1 {
-    font-size: 3em;
+section.middle-first h1 {
     font-weight: bold;
     color: #29bea2;
     margin: 0;
-    padding: 0;
     text-align: center;
 }
 
-section.middle #section-middle-header {
-    color: red;
-}
-
-section.middle img {
+section.middle-first img {
     padding: 1rem;
 }
 
-section.middle .wrap {
+section.middle-first button {
+    background: #cb2027;
+    width: 50%;
+    color: #fff;
+}
+
+section.middle-first .wrap {
     width: 100%;
     display: flex;
     align-items: center;
@@ -129,26 +86,32 @@ section.middle .wrap {
     margin: 3% 0;    
 }
 
-section.middle .wrap-text {
+section.middle-first .wrap-text {
     justify-content: center;
     font-size: 17px;
 }
 
-section.middle p {
+section.middle-first p {
     margin: 20px 0 0;
     padding: 0;
     font-size: 1em;
     text-align: center;
 }
 
-section.middle .ptext {
-    margin: 40px 0 100px 0;
+/*----------------------------------------------*/
+
+section.middle-second {
+    padding: 2.5rem;
 }
 
-section.middle button {
-    background: #cb2027;
-    width: 30%;
-    color: #fff;
+section.middle-second .ptext {
+    margin: 1rem;
+}
+
+section.middle-second h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #29bea2;
 }
 
 /************************* FOOTER *************************/
@@ -163,7 +126,7 @@ section.footer {
 section.footer h1 {
     font-size: 22px;
     font-weight: bold;
-    color: #000080;
+    color: #fff;
     margin-top: 5px;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -180,7 +143,6 @@ section.footer button {
     border: #000;
     text-transform: uppercase;
     opacity: 0.8;
-
 }
 
 section.footer button:hover {
@@ -208,334 +170,74 @@ section.footer .bottom-footer h3{
 /*
 @media screen and (max-width: 1050px) {
 
-    .responsive-bar {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: #101010;
-        top: 0;
-        left: 0;
-        padding: 5px 20px;
-        box-sizing: border-box;
-        z-index: 1;
-    }
-
-    .responsive-bar .logo img {
-        float: left;
-        height: 45px;
-        padding-top: 3px;
-    }
-
-    .responsive-bar .menu h4 {
-        float: right;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-        line-height: 60px;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
-    nav {
-        background: #101010;
-        height: 60px;
-        padding: 0;
-    }
-
-    nav .logo {
-        display: none;
-    }
-
-    nav ul {
-        position: absolute;
-        width: 100%;
-        top: 60px;
-        left: 0;
-        background: #101010;
-        float: none;
-        display: none;
-    }
-
-    nav ul.active {
-        display: block;
-    }
-
-    nav ul li {
-        width: 100%;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-        line-height: 40px !important;
-        color: #fff;
-    }
-
-    #contact-send {
-        background: #f00;
-    }
-}
-*/
-
-/************************* LOGIN PAGE *************************/
-
-.container-form {
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-    margin-bottom: 10%;
-    margin-top: 6%;
+.responsive-bar {
+display: block;
+width: 100%;
+height: 2px;
+background: #101010;
+top: 0;
+left: 0;
+padding: 5px 20px;
+box-sizing: border-box;
+z-index: 1;
 }
 
-.header {
-    background: #fff;
-    text-align: center;
-    color: #000;
-    font-size: 17px;
+.responsive-bar .logo img {
+float: left;
+height: 45px;
+padding-top: 3px;
 }
 
-.wrapper >* {
-    padding: 1rem;
-}
-
-.wrapper {
-    box-shadow: 0 0 20px rgba(72,94,116,0.7);
-}
-
-.contact form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 22px;
-}
-
-.contact form label {
-    display: block;
-    font-size: 15px;
-}
-
-.contact form p {
-    margin: 0;
-}
-
-.contact form input[type="email"],
-.contact form input[type="password"] {
-    background: #e7eeef;
-    border-radius: 6px;
-    border: none;
-    font-size: 15px;
-}
-
-.contact form input[type="email"]:focus,
-.contact form input[type="password"]:focus {
-    background: #fff9ba;
-    transition: 1s;
-}
-
-.contact form .privacy {
-    text-align: center;
-    font-size: 11px;
-}
-
-.contact form .full {
-    text-align: center;
-}
-
-.contact form .full a {
-    font-size: 13px;
-    color: #000080;
-}
-
-.contact form .privacy a {
-    color: #29bea2;
-}
-
-.contact form input {
-    width: 100%;
-    padding: .5em;
-}
-
-.contact form button {
-    width: 100%;
-    height: 35px;
-    font-size: 15px;
-    background: #005b96;
-    color: #fff;
-    border: 0;
-    text-transform: uppercase;
-}
-
-/*
-.contact form button:hover, .contact form button:focus {
-background: #000080;
+.responsive-bar .menu h4 {
+float: right;
+color: #fff;
+margin: 0;
+padding: 0;
+line-height: 60px;
+text-transform: uppercase;
 cursor: pointer;
-outline: 0;
-transition: background-color 1s ease-out;
-}
-*/
-
-#signin-footer {
-    background: #fff;
-    color: #000;
-    text-align: center;
 }
 
-#signin-footer a {
-    color: #29bea2;
-    font-weight: bold;
-    text-decoration: none;
+nav {
+background: #101010;
+height: 60px;
+padding: 0;
 }
 
-/************************* CONTACT PAGE *************************/
-section.contact-top {
-    width: 100%; 
-    height: 55vh;
-    background: url(Images/team.jpeg);
-    background-size: cover;
-    background-position: center;
+nav .logo {
+display: none;
 }
 
-section.contact-content h2 {
-    text-align: center;
-    padding: 10px;
+nav ul {
+position: absolute;
+width: 100%;
+top: 60px;
+left: 0;
+background: #101010;
+float: none;
+display: none;
 }
 
-section.contact-content {
-    height: 500px;
+nav ul.active {
+display: block;
 }
 
-#contact-left {
-    display: inline-block;
-    padding: 0;
-    margin-right: -5px;
-    vertical-align: top;
-    padding-left: 8%;
-    padding-right: 4%;
-    color: #888888;
-    border: none;
+nav ul li {
+width: 100%;
 }
 
-#contact-right {
-    display: inline-block;
-    padding: 0;
-    vertical-align: top;
-    border: none;
-}
-
-#contact-right form {
-    display: block;
-    margin-top: 0em;  
-}
-
-#contact-right form .form-header {
-    font-size: 18px;
-}
-
-#contact-right form .input-body {
-    margin-bottom: 3%;
-    width: 600px;
-    height: 60px;
-    font-size: 16px;
-    padding-left: 2%;
-    border: 2px solid #262626;
-    border-radius: 8px;
-}
-
-#contact-right form textarea {
-    height: 100px !important;
-}
-
-#contact-right form h4 {
-    font-size: 16px;
+nav ul li a {
+display: block;
+padding: 0;
+width: 100%;
+text-align: center;
+line-height: 40px !important;
+color: #fff;
 }
 
 #contact-send {
-    width: 600px;
-    height: 60px;
-    background: #29bea2;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
+background: #f00;
 }
-
-.card {
-    position: relative;
-    flex-direction: column;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border-radius: .25rem;
 }
+*/
 
-.card-body {
-    flex: 1 1 auto;
-    padding: 1.25rem;
-}
-
-.star {
-    color: #29bea2;
-}
-
-/************************* VIDEOS PAGE *************************/
-section.video-top {
-    width: 100%; 
-    height: 50vh;
-    background: url(Images/teacher.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-section.video-content {
-    margin: 150px 0;
-}
-
-.video-box {
-    position: relative;
-    margin: 40px auto;
-    border-radius: 4px;
-    /*    overflow: hidden;*/
-    max-width: 300px;
-}
-
-.video-box button {
-    position: absolute;
-    color: #fff;
-    margin: 0;
-    top: -40px;
-    left: 20px;
-    transform: translateY(-50%);
-    transform: translateX(50%);
-    text-align: center;
-    transition: .3s;
-    /*
-    background: #fff;
-    border: none;
-    */
-}
-
-.video-box:hover button {
-    top: 0;
-    margin: 0 auto;
-    background: #29bea2;  
-}
-
-/*
-.videoWrapper {
-position: relative;
-padding-bottom: 20%;  
-padding-top: 25px;
-height: 0;
-}
-
-.videoWrapper iframe {
-position: absolute;
-top: 5%;
-left: 0;
-width: 50%;
-height: 80%;
-}*/

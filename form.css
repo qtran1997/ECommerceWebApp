@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Times New Roman, sans-serif;
+}
+
+/************************* HOME NAVBAR *************************/
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    background: #404040;
+}
+
+.navbar img {
+    height: 50px;
+    width: 250px;
+}
+
+.navbar ul {
+    margin-top: 12px;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    line-height: 30px;
+    color: #fff;
+    padding: 5px 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.navbar ul li a:hover {
+    background: #29bea2;
+    color: #fff;
+    text-decoration: none;
+}
+
+/************************* FOOTER *************************/
+section.footer {
+    padding: 25px 0;
+    position: relative;
+    background: #363636;
+    color: #fff;
+    border-top: 3px solid #29bea2;
+}
+
+section.footer h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+section.footer p {
+    margin: 0;
+}
+
+section.footer button {
+    margin-top: 5px;
+    width: 50%;
+    background: #cb2027;
+    border: #000;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+section.footer button:hover {
+    background: #cb2027;
+    opacity: 1;
+}
+
+section.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa {
+    background: #fff;
+    margin: 3px;
+}
+
+section.footer .bottom-footer h3{
+    font-size: 14px;
+    color: grey;
+    margin: 20px 0;
+}
+
+/************************* FORMS *************************/
+.container-form {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    background: #005b96;
+}
+
+.wrapper >* {
+    padding: 1.3rem;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px rgba(72,94,116,0.7);
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 22px;
+}
+
+.contact form label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form input {
+    background: #e7eeef;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    opacity: .4;
+}
+
+.contact form input:focus {
+    background: #eee;
+    transition: 1s;
+    outline-color: #29bea2;
+    opacity: 1;
+}
+
+.contact form .privacy {
+    text-align: center;
+    font-size: 13px;
+}
+
+.contact form .full {
+    text-align: center;
+}
+
+.contact form .full a {
+    font-size: 13px;
+    color: #000080;
+}
+
+.contact form .privacy a {
+    color: #29bea2;
+}
+
+.contact form input {
+    width: 100%;
+    padding: .5em;
+}
+
+.contact form button {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    background: #005b96;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+}
+
+#signin-footer {
+    background: #005b96;
+    color: #fff;
+    text-align: center;
+}
+
+#signin-footer a {
+    color: #29bea2;
+    font-weight: bold;
+    text-decoration: none;
+/*    text-transform: uppercase;*/
+}

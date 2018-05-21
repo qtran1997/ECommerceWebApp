@@ -32,7 +32,7 @@
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
             <h1>Connect</h1>
 
-            <p>Email Us: <a href="#">sheekmedia@gmail.com</a></p>
+            <p>Email Us: <a href="#">sheekmedia@sdsu.edu</a></p>
             <p>Give us a call! <a href="#">555-555-5555</a></p>
             <a href="https://www.facebook.com"><i class="fa fa-facebook-official" style="font-size:36px"></i></a>
             <a href="https://www.twitter.com"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
