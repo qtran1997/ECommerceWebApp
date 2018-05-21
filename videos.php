@@ -12,7 +12,7 @@ session_start();
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="index.css">
 
-        <title>Login</title>
+        <title>Videos</title>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('.menu h4').click(function() {
@@ -21,7 +21,6 @@ session_start();
             })
         </script>
     </head>
-    <title>Videos</title>
 
     <body>
         <div class="nav-wrapper">
@@ -38,65 +37,68 @@ session_start();
         </div>
 
         <!-- Video header picture... Surround all sections within div to prevent navbar failure-->
-        <section class="video-top">
-
-        </section>
-
-
-        <section class="video-content">
+            <h3 id="video-header">Welcome to your online video experience! &nbsp;</h3>
+            
+            
+            
+            
+            <!-- Video Column Container-->
+            
+            
 
 <!--
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="video-box">
-                                <img src="Images/shore.jpeg" class="img-responsive" alt="">
-                                <h3>STEP 1</h3>
-                                <button class="btn btn-primary text-center" value="WATCH NOW">WATCH NOW</button>
-                            </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row" id="video-selection">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="video-box">
+                            <img src="Images/shore.jpeg" class="img-responsive" alt="">
+                            <h3 class="text-center">STEP 1</h3>
+                            <button class="btn btn-primary text-center" value="WATCH NOW">WATCH NOW</button>
                         </div>
+                    </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="video-box">
-                                <img src="Images/team.jpeg" class="img-responsive" alt="">
-                                <h3>STEP 2</h3>
-                                <button class="btn btn-primary text-center" value="WATCH NOW">BUY NOW</button>
-                            </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="video-box">
+                            <img src="Images/team.jpeg" class="img-responsive" alt="">
+                            <h3 class="text-center">STEP 2</h3>
+                            <button class="btn btn-primary text-center" value="WATCH NOW">WATCH NOW </button>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="video-box">
-                                <img src="Images/load.jpeg" class="img-responsive" alt="">
-                                <h3>STEP 3</h3>
-                                <button class="btn btn-primary text-center" value="WATCH NOW">BUY NOW</button>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="video-box">
+                            <img src="Images/load.jpeg" class="img-responsive" alt="">
+                            <h3 class="text-center">STEP 3</h3>
+                            <button class="btn btn-primary text-center" value="WATCH NOW">BUY NOW</button>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="video-box">
-                                <img src="Images/water.jpeg" class="img-responsive" alt="">
-                                <h3>STEP 4</h3>
-                                <button class="btn btn-primary text-center" value="WATCH NOW">BUY NOW</button>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="video-box">
+                            <img src="Images/water.jpeg" class="img-responsive" alt="">
+                            <h3 class="text-center">STEP 4</h3>
+                            <button class="btn btn-primary text-center" value="WATCH NOW">BUY NOW</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 -->
 
 
 
 
-        </section>
 
 
-<!--
-        <section class="footer">
 
-            <?php  
-            include 'footer.php';
-            ?>
 
-        </section>
+        <!--
+<section class="footer">
+
+<?php  
+include 'footer.php';
+?>
+
+</section>
 -->
 
 
