@@ -21,43 +21,85 @@
         </div>
 
 
-
-
         <div class="account-profile">
             <div class="heading">
                 <i class="fas fa-user"></i> Edit Profile
             </div>
             <div class="change-info">
                 <form action="">
-                    <p>
-                        <label for="name">Full Name</label>
-                        <input type="text" placeholder="Mustafa Hayeri" disabled>
-                        <button>EDIT</button>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="text" placeholder="Mustafa Hayeri" disabled>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <button>EDIT</button>
+                        </div>
+                    </div>
 
-                    </p>
-                    
-                    <p>
-                        <label for="name">Email</label>
-                        <input type="email" placeholder="mustafahayeri@yahoo.com" disabled>
-                        <button>EDIT</button>
+                    <hr class="w-100 clearfix">
 
-                    </p>
-                    
-                    <p>
-                        <label for="name">Password</label>
-                        <input type="password" placeholder="********" disabled>
-                        <button>EDIT</button>
-                    </p>
-                    
-                    <p>
-                        <label for="name">Confirm Password</label>
-                        <input type="password" placeholder="********" disabled>
-                        <button>EDIT</button>
-                    </p>
-                    
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <label for="name">Email Address</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="email" placeholder="mustafahayeri@yahoo.com" disabled>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <button>EDIT</button>
+                        </div>
+                    </div>
+
+                    <hr class="w-100 clearfix">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <label for="name">Password</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="password" placeholder="********" disabled>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <button>EDIT</button>
+                        </div>
+                    </div>
+                    <hr class="w-100 clearfix">
+
+                    <div class="row edit-field">
+                        <div class="col-lg-4 col-md-4">
+                            <label for="name">Confirm Password</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input type="password" placeholder="********" disabled>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <button>EDIT</button>
+                        </div>
+                    </div>
+                    <hr class="w-100 clearfix">
+                    <button id="save-edits">SAVE CHANGES</button>
                 </form>
             </div>
         </div>
+
+
+
+
+
+
+
+
+        <!--
+
+<section class="footer">
+<?php  
+include 'footer.php';
+?>
+
+</section>
+-->
 
 
     </body>

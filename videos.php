@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-   <html>
+<html>
     <meta charset="UTF-8">
     <head>
         <meta charset="UTF-8" content="width=device-width, initial-scale=1">
@@ -10,6 +10,8 @@ session_start();
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
         <link rel="stylesheet" type="text/css" href="index.css">
 
         <title>Videos</title>
@@ -36,53 +38,108 @@ session_start();
             ?>
         </div>
 
-        <!-- Video header picture... Surround all sections within div to prevent navbar failure-->
-            <h3 id="video-header">Welcome to your online video experience! &nbsp;</h3>
-            
-            
-            
-            
-            <!-- Video Column Container-->
-            
-            
+        <!-- Video Column Container-->
 
-<!--
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row" id="video-selection">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="video-box">
-                            <img src="Images/shore.jpeg" class="img-responsive" alt="">
-                            <h3 class="text-center">STEP 1</h3>
-                            <button class="btn btn-primary text-center" value="WATCH NOW">WATCH NOW</button>
-                        </div>
-                    </div>
+        <div class="video-container">
+            <div class="video-header">
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="video-box">
-                            <img src="Images/team.jpeg" class="img-responsive" alt="">
-                            <h3 class="text-center">STEP 2</h3>
-                            <button class="btn btn-primary text-center" value="WATCH NOW">WATCH NOW </button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="video-box">
-                            <img src="Images/load.jpeg" class="img-responsive" alt="">
-                            <h3 class="text-center">STEP 3</h3>
-                            <button class="btn btn-primary text-center" value="WATCH NOW">BUY NOW</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="video-box">
-                            <img src="Images/water.jpeg" class="img-responsive" alt="">
-                            <h3 class="text-center">STEP 4</h3>
-                            <button class="btn btn-primary text-center" value="WATCH NOW">BUY NOW</button>
-                        </div>
-                    </div>
-                </div>
+                <span>
+                    <span class="previous" style="float:left";>
+                        <i class="fas fa-arrow-circle-left"></i>
+                        Previous Lesson
+                    </span>
+                    <span class="next" style="float:right";>
+                        Next Lesson
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </span>
+                </span>    
             </div>
+
+            <!-- MENU -->
+            <div class="video-menu">
+               
+               <div id="sidebar">
+                  <h3>Lesson Selection</h3>
+                   <ul>
+                       <li>1. Introduction (3:50)</li>
+                       <li>2. Clicker Setup (2:43)</li>
+                       <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li>
+                        <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li>
+                        <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li>
+                        <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li>
+                        <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li>
+                        <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li>
+                        <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li> <li>3. Using the Clicker (4:45)</li>
+                       <li>4. Still Using the Clicker (4:32)</li>
+                       <li>5. Get Every Shift (2:15)</li>
+                       <li>6. The End (0:42)</li>
+                   </ul>
+               </div>
+            
+            </div>
+
+            <!-- VIDEO -->
+            <div class="video">
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t6CBKf8K_Ac?rel=0&amp&load_iv_policy=3;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+            </div>
+
+            <div class="video-footer">FOOTER</div>
         </div>
--->
 
 
 
@@ -91,7 +148,7 @@ session_start();
 
 
 
-        <!--
+        
 <section class="footer">
 
 <?php  
@@ -99,7 +156,7 @@ include 'footer.php';
 ?>
 
 </section>
--->
+
 
 
 

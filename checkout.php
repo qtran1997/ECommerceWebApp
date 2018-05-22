@@ -19,18 +19,18 @@
             ?>
         </div>
 
-        <div class="grid">
+        <div class="grid" id="checkout">
             <div class="bundle">
                 <h4>Bundle Package</h4>
                 <div class="bundle-info">
-                    <div class="row">
+                    <div class="row items">
                         <div class="col-lg-6 col-md-6">
                             <img src="Images/card.png" alt="">
                             <img src="Images/expiration.png" alt="">
                             <img src="Images/cvv.jpg" alt="">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row cart">
                         <div class="col-lg-4">
                             <img src="Images/card.png" alt="">
                         </div>
@@ -38,10 +38,10 @@
                             <h5>Step 1</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>TOTAL: $99.99</h5>
+                            <h5>$0.99</h5>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row cart">
                         <div class="col-lg-4">
                             <img src="Images/expiration.png" alt="">
                         </div>
@@ -49,10 +49,10 @@
                             <h5>Step 2</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>TOTAL: ---</h5>
+                            <h5>---</h5>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row cart">
                         <div class="col-lg-4">
                             <img src="Images/cvv.jpg" alt="">
                         </div>
@@ -60,14 +60,10 @@
                             <h5>Step 3</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>TOTAL: ---</h5>
+                            <h5>---</h5>
                         </div>
                     </div>
-
-
-                </div>
-
-                <!--                <h5>TOTAL: $99.99</h5>-->
+                </div>     
             </div>
             <div class="billing">
                 <h4>Billing Information:</h4>
@@ -106,6 +102,7 @@
                     <button>Checkout</button>
                 </div>
             </div>
+
         </div>
 
         <!--
