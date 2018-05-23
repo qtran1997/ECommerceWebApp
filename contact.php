@@ -41,10 +41,10 @@ session_start();
             ?>
         </div>
 
-<!--
-        <section class="contact-top">
+        <!--
+<section class="contact-top">
 
-        </section>
+</section>
 -->
 
         <section class="contact-content">
