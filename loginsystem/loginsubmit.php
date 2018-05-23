@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
     session_start();
     include 'dbh.php';
 
@@ -16,9 +16,9 @@
     $result = mysqli_query($conn, $sql);
     
     if(!$row = mysqli_fetch_assoc($result)) {
-        header("Location: ../login.php?failure=1");
-        
+        header("Location: ../login.php?failure=1");      
     }
+
     else {
         $_SESSION['id'] = $row['id'];
         $_SESSION['email'] = $row['email'];
