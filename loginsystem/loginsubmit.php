@@ -1,4 +1,5 @@
 <?php
+
     session_start();
     include 'dbh.php';
 
@@ -27,6 +28,4 @@
         header("Location: ../accountpage.php");
 //        header("Location: ../index.php");
     }
-    
-    
 ?>
