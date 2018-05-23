@@ -8,9 +8,11 @@
 
     $index = $_SESSION['id'];
 
-    $sql = "UPDATE aclickerlogin SET email= '$email' WHERE id ='$index'";
-    $result = mysqli_query($conn, $sql);
-
+    if($email != "") {
+        $sql = "UPDATE aclickerlogin SET email= '$email' WHERE id ='$index'";
+        $result = mysqli_query($conn, $sql);
+    }
+    
     if($pwd1 == "" && $pwd2 == "") {
         echo "EMPTY PASSWORDS";
     }
