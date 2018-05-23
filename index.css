@@ -1,3 +1,4 @@
+
 html {
     overflow-y: scroll;
 }
@@ -125,6 +126,8 @@ section.footer {
     background: #2E4057;
     color: #000;
     border-top: 3px solid #29bea2;
+    bottom: 0;
+    left:0;
 }
 
 section.footer h1 {
@@ -403,7 +406,7 @@ section.contact-content {
 }
 
 .wrapper {
-    border-radius:15px;
+    border-radius:16px;
     border: 1px black solid;
     box-shadow: 0 0 20px rgba(72,94,116,0.7);
 }
@@ -496,6 +499,11 @@ section.contact-content {
     color:red;
 }
 
+.success{
+    font-weight:bold;
+    color:green;
+}
+
 /************************* END OF LOGIN/SIGNUP *************************/
 
 
@@ -574,7 +582,7 @@ section.contact-content {
 }
 
 .account-profile input {
-    width: 360px;
+    width: 300px;
     padding-left: 4px;
 }
 

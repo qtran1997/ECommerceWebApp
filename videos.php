@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<html>
+<html lang="en">
     <meta charset="UTF-8">
     <head>
         <meta charset="UTF-8" content="width=device-width, initial-scale=1">
@@ -20,12 +20,10 @@ session_start();
     <body>
         <div class="nav-wrapper">
             <?php  
-            if(isset($_SESSION['id']))
-            {
+            if(isset($_SESSION['id'])) {
                 include 'navloggedin.php';
             }
-            else
-            {
+            else {
                 include 'navloggedout.php';
             }
             ?>

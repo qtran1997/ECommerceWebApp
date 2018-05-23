@@ -16,13 +16,7 @@ session_start();
         <link rel="stylesheet" type="text/css" href="index.css">
 
         <title>Contact Us!</title>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('.menu h4').click(function() {
-                    $("nav ul").toggleClass("active");
-                })
-            })
-        </script>
+        
     </head>
 
     <body>
@@ -30,12 +24,10 @@ session_start();
         <!-- NAVBAR -->
         <div class="nav-wrapper">
             <?php  
-            if(isset($_SESSION['id']))
-            {
+            if(isset($_SESSION['id'])) {
                 include 'navloggedin.php';
             }
-            else
-            {
+            else {
                 include 'navloggedout.php';
             }
             ?>

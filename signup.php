@@ -25,12 +25,10 @@ session_start();
         <!-- NAVBAR -->
         <div class="nav-wrapper">
             <?php  
-            if(isset($_SESSION['id']))
-            {
+            if(isset($_SESSION['id'])) {
                 include 'navloggedin.php';
             }
-            else
-            {
+            else {
                 include 'navloggedout.php';
             }
             ?>

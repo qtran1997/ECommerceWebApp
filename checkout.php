@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8" content="width=device-width, initial-scale=1">
@@ -15,7 +18,12 @@
 
         <div class="nav-wrapper">
             <?php  
-            include 'navloggedout.php';
+            if(isset($_SESSION['id'])) {
+                include 'navloggedin.php';
+            }
+            else {
+                include 'navloggedout.php';
+            }
             ?>
         </div>
 
@@ -24,11 +32,13 @@
                 <h4>Bundle Package</h4>
                 <div class="bundle-info">
                     <div class="row items">
+<!--
                         <div class="col-lg-6 col-md-6">
                             <img src="Images/card.png" alt="">
                             <img src="Images/expiration.png" alt="">
                             <img src="Images/cvv.jpg" alt="">
                         </div>
+-->
                     </div>
                     <div class="row cart">
                         <div class="col-lg-4">
@@ -38,7 +48,7 @@
                             <h5>Step 1</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>$0.99</h5>
+                            <h5>FREE!</h5>
                         </div>
                     </div>
                     <div class="row cart">
@@ -46,10 +56,9 @@
                             <img src="Images/expiration.png" alt="">
                         </div>
                         <div class="col-lg-4">
-                            <h5>Step 2</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>---</h5>
+                            <h5>$0.15</h5>
                         </div>
                     </div>
                     <div class="row cart">
@@ -60,7 +69,29 @@
                             <h5>Step 3</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>---</h5>
+                            <h5>$0.15</h5>
+                        </div>
+                    </div>
+                    <div class="row cart">
+                        <div class="col-lg-4">
+                            <img src="Images/cvv.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Step 3</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>$0.15</h5>
+                        </div>
+                    </div>
+                    <div class="row cart">
+                        <div class="col-lg-4">
+                            <img src="Images/cvv.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Step 3</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>$0.15</h5>
                         </div>
                     </div>
                 </div>     

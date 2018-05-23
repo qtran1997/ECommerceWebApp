@@ -4,7 +4,10 @@
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
             <h1>Home</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur praesentium fugit.</p>
-            <a href="signup.php"><button class="btn btn-success">Let's Start</button></a>
+            <?php
+            if(!isset($_SESSION['id']))
+                echo '<a href="signup.php"><button class="btn btn-success">Let\'s Start</button></a>'
+            ?>
             <hr class="w-100 clearfix d-md-none hidden-sm hidden-md hidden-lg">
         </div>
 
