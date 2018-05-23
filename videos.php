@@ -48,48 +48,53 @@ session_start();
             <!-- MENU -->
             <div class="video-menu">
                 <div id="sidebar">
-                    <h3>Lesson Selection</h3>
-                    <ul>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                        <li>1. Introduction (3:50)</li>
-                    </ul>
+                    <h3>Clicker Setup</h3>
+                    <nav>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal">2. Clicker Setup (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal">3. Using the Clicker (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal">4. Still Using the Clicker (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal">5. The End (0:42)</li>
+                        </ul>
+                        <h3>Lesson Selection</h3>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal">2. Clicker Setup (2:43)</li>
+                            <li>3. Using the Clicker (4:45)</li>
+                            <li>4. Still Using the Clicker (4:32)</li>
+                            <li>5. The End (0:42)</li>
+                        </ul>
+
+                        <h3>Lesson Selection</h3>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal">2. Clicker Setup (2:43)</li>
+                            <li>3. Using the Clicker (4:45)</li>
+                            <li>4. Still Using the Clicker (4:32)</li>
+                            <li>5. The End (0:42)</li>
+                        </ul>
+
+                        <h3>Lesson Selection</h3>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li>1. Introduction (3:50)</li>
+                            <li>2. Clicker Setup (2:43)</li>
+                            <li>3. Using the Clicker (4:45)</li>
+                            <li>4. Still Using the Clicker (4:32)</li>
+                            <li>5. The End (0:42)</li>
+                        </ul>
+
+                        <h3>Lesson Selection</h3>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal">2. Clicker Setup (2:43)</li>
+                            <li>3. Using the Clicker (4:45)</li>
+                            <li>4. Still Using the Clicker (4:32)</li>
+                            <li>5. The End (0:42)</li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-
-            <!--
-<li>2. Clicker Setup (2:43)</li>
-<li>3. Using the Clicker (4:45)</li>
-<li>4. Still Using the Clicker (4:32)</li>
-<li>5. Get Every Shift (2:15)</li>
-<li>6. The End (0:42)</li>
--->
-
 
             <!-- VIDEO -->
             <div class="video">
@@ -99,9 +104,43 @@ session_start();
             <div class="video-footer">
 
             </div>
+        </div>
 
+        <!-- Create an account form -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="unavailable-message">
+                        <h5 class="modal-title text-center"><i class="fas fa-lock"></i>
+                            Lecture Content is Unavailable.</h5>
+                    </div>
+                    <div class="modal-body" id="video-login">
+                        <div class="text-center">
+                            <a href="signup.php"><button type="button" class="btn btn-primary">Register Now to Unlock</button></a>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">X</button>
+                            <p>If you already have an account, <a href="signup.php">sign in here</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <!-- Purchase tutorial form -->
+        <div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="unavailable-message">
+                        <h5 class="modal-title text-center"><i class="fas fa-lock"></i>
+                            Lecture Content is Unavailable.</h5>
+                    </div>
+                    <div class="modal-body" id="video-login">
+                        <div class="text-center">
+                            <a href="checkout.php"><button type="button" class="btn btn-primary">Purchase Now to Unlock</button></a>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
