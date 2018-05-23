@@ -24,8 +24,8 @@ body {
 
 .navbar ul {
     margin-top: 12px;
-    padding: 0;
-    font-size: 14px;
+    padding-left: 23px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -63,7 +63,6 @@ section.top {
 /*----------------------------------------------*/
 section.middle-first {
     padding: 2.5rem;
-    background: #e5e6eb;
 }
 
 section.middle-first h1 {
@@ -123,15 +122,15 @@ section.middle-second h1 {
 section.footer {
     padding: 25px 0;
     position: relative;
-    background: #363636;
-    color: #fff;
+    background: #fff;
+    color: #000;
     border-top: 3px solid #29bea2;
 }
 
 section.footer h1 {
     font-size: 22px;
     font-weight: bold;
-    color: #fff;
+    color: #000;
     margin-top: 5px;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -143,7 +142,7 @@ section.footer p {
 
 section.footer button {
     margin-top: 5px;
-    width: 50%;
+    width: 100%;
     background: #cb2027;
     border: #000;
     text-transform: uppercase;
@@ -156,13 +155,24 @@ section.footer button:hover {
 }
 
 section.footer a {
-    color: #fff;
+    color: #000080;
     text-decoration: none;
 }
 
-.fa {
-    background: #fff;
-    margin: 3px;
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-twitter-square {
+    color: #00aced;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-linkedin {
+    color: #007bb6;
 }
 
 section.footer .bottom-footer h3{
@@ -170,8 +180,6 @@ section.footer .bottom-footer h3{
     color: grey;
     margin: 20px 0;
 }
-
-
 
 /************************* VIDEOS *************************/
 .video-container {
@@ -194,31 +202,48 @@ section.footer .bottom-footer h3{
     color: blue;
 }
 
-#sidebar {
-    
+#sidebar ul li:hover{
+    background: blue;
+    cursor: pointer;
+    color: #fff;
 }
 
 #sidebar ul li {
     color: #000;
     list-style: none;
-    padding: 10px 10px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #000;
     float: left;
 }
 
+.previous {
+    padding-left: 5%;
+    margin-top: 13px;
+}
+
+.next {
+    padding-right: 5%;
+    margin-top: 13px;
+}
+
+#sidebar h3 {
+    font-size: 23px;
+    color: #29bea2;
+    background: #fff;
+}
+
 #sidebar ul li::after {
-/*
+    /*
     content: "\f0cd";
     display: block;
-*/
+    */
 }
 
 .video-menu {
-    background: rgba(230, 230, 230, 0.9);
-    color: #fff;
-    padding-top: 3em;
-/*    z-index: -1;*/
-    overflow-y: auto;
-    
+    background: rgba(230, 230, 230, 0.9);;
+    color: red;
+    padding-top: 2em;
+    overflow-y: auto;    
 }
 
 .video {
@@ -235,7 +260,7 @@ section.footer .bottom-footer h3{
 
 .video-footer {
     grid-column: 1 / -1;
-    background: orange;
+    background: rgba(230, 230, 130, 0.9);;
 }
 
 
@@ -252,7 +277,7 @@ section.contact-content h2 {
 }
 
 section.contact-content {
-    height: 500px;
+    height: auto;
 }
 
 #contact-left {
@@ -337,12 +362,6 @@ section.contact-content {
 
 
 /************************* LOGIN/SIGNUP *************************/
-/*
-#formscreen {
-background: #d3d3d3;
-}
-*/
-
 .container-form {
     max-width: 550px;
     margin-left: auto;

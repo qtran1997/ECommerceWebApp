@@ -13,13 +13,6 @@ session_start();
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="index.css"> 
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('.menu h4').click(function() {
-                    $("nav ul").toggleClass("active");
-                })
-            })
-        </script>
         <title>Sheek Ticker</title>
 
     </head>
