@@ -48,49 +48,49 @@ session_start();
             <!-- MENU -->
             <div class="video-menu">
                 <div id="sidebar">
-                    <h3>Clicker Setup</h3>
                     <nav>
+                        <h3>Clicker Setup</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal">2. Clicker Setup (2:43)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal">3. Using the Clicker (4:45)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal">4. Still Using the Clicker (4:32)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal">5. The End (0:42)</li>
+                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
                         </ul>
-                        <h3>Lesson Selection</h3>
+                        <h3>Coming Soon</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal">2. Clicker Setup (2:43)</li>
-                            <li>3. Using the Clicker (4:45)</li>
-                            <li>4. Still Using the Clicker (4:32)</li>
-                            <li>5. The End (0:42)</li>
-                        </ul>
-
-                        <h3>Lesson Selection</h3>
-                        <ul class="nav nav-divider nav-stacked">
-                            <li>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal">2. Clicker Setup (2:43)</li>
-                            <li>3. Using the Clicker (4:45)</li>
-                            <li>4. Still Using the Clicker (4:32)</li>
-                            <li>5. The End (0:42)</li>
+                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
                         </ul>
 
-                        <h3>Lesson Selection</h3>
+                        <h3>Coming Soon</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li>1. Introduction (3:50)</li>
-                            <li>2. Clicker Setup (2:43)</li>
-                            <li>3. Using the Clicker (4:45)</li>
-                            <li>4. Still Using the Clicker (4:32)</li>
-                            <li>5. The End (0:42)</li>
+                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
                         </ul>
 
-                        <h3>Lesson Selection</h3>
+                        <h3>Coming Soon</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal">2. Clicker Setup (2:43)</li>
-                            <li>3. Using the Clicker (4:45)</li>
-                            <li>4. Still Using the Clicker (4:32)</li>
-                            <li>5. The End (0:42)</li>
+                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
+                        </ul>
+
+                        <h3>Coming Soon</h3>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
                         </ul>
                     </nav>
                 </div>
@@ -98,12 +98,14 @@ session_start();
 
             <!-- VIDEO -->
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/tQx4lutEhok?rel=0&amp&load_iv_policy=3;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tQx4lutEhok?rel=0&amp&load_iv_policy=3;controls=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
 
-            <div class="video-footer">
+            <!--
+<div class="video-footer">
 
-            </div>
+</div>
+-->
         </div>
 
         <!-- Create an account form -->
