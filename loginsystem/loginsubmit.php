@@ -14,20 +14,18 @@
 
     $result = mysqli_query($conn, $sql);
     
-    if(!$row = mysqli_fetch_assoc($result))
-    {
+    if(!$row = mysqli_fetch_assoc($result)) {
         header("Location: ../login.php?failure=1");
         
     }
-    else
-    {
+    else {
         $_SESSION['id'] = $row['id'];
         $_SESSION['email'] = $row['email'];
         $_SESSION['fname'] = $row['fname'];
         $_SESSION['lname'] = $row['lname'];
     
-//        header("Location: ../accountpage.php");
-        header("Location: ../index.php");
+        header("Location: ../accountpage.php");
+//        header("Location: ../index.php");
     }
     
     

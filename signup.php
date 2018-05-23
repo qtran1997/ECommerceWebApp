@@ -25,12 +25,10 @@ session_start();
         <!-- NAVBAR -->
         <div class="nav-wrapper">
             <?php  
-            if(isset($_SESSION['id']))
-            {
+            if(isset($_SESSION['id'])) {
                 include 'navloggedin.php';
             }
-            else
-            {
+            else {
                 include 'navloggedout.php';
             }
             ?>
@@ -49,14 +47,14 @@ session_start();
                         }
                         else
                         {
-                            $failureE = $_GET['failure'];
+                            $failureE = $_GET['failureE'];
                         }
                         if($failureE == 1)
                         {
                             echo "<p class='error'>Your email or login is already used!</p>";
                         }
                         $failureP = "";
-                        if(empty($_GET['failureE']))
+                        if(empty($_GET['failureP']))
                         {
 
                         }

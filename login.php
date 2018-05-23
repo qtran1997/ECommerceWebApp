@@ -27,12 +27,10 @@ session_start();
         <!-- NAVBAR -->
         <div class="nav-wrapper">
             <?php  
-            if(isset($_SESSION['id']))
-            {
+            if(isset($_SESSION['id'])) {
                 include 'navloggedin.php';
             }
-            else
-            {
+            else {
                 include 'navloggedout.php';
             }
             
@@ -47,16 +45,10 @@ session_start();
                     <form action="loginsystem/loginsubmit.php" method="POST">
                         <?php
                         $failure = "";
-                        if(empty($_GET['failure']))
-                        {
-
-                        }
-                        else
-                        {
+                        if(!empty($_GET['failure'])) {
                             $failure = $_GET['failure'];
                         }
-                        if($failure == 1)
-                        {
+                        if($failure == 1) {
                             echo "<p class='error'>Your information is incorrect!</p>";
                         }
                         ?>

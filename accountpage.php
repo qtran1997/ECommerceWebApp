@@ -19,12 +19,10 @@ session_start();
 
         <div class="nav-wrapper">
             <?php  
-            if(isset($_SESSION['id']))
-            {
+            if(isset($_SESSION['id'])) {
                 include 'navloggedin.php';
             }
-            else
-            {
+            else {
                 include 'navloggedout.php';
             }
             ?>
@@ -33,63 +31,71 @@ session_start();
 
         <div class="account-profile">
             <div class="heading">
+                <i class="fas fa-shopping-cart"></i> 
+                <a href="checkout.php">Purchase Premium Bundle</a>
+            </div>
+            <hr class="w-100 clearfix">
+
+            <div class="heading">
                 <i class="fas fa-user"></i> Edit Profile
             </div>
+            <hr class="w-100 clearfix">
             <div class="change-info">
-                <form action="">
+                <form action="loginsystem/changeinfosubmit.php" method="POST">
+                    <?php 
+                    $failure = "";
+                    if(!empty($_GET['failure'])) {
+                        $failure = $_GET['failure'];
+                    }
+                    if($failure == 1){
+                        echo "<p class='error'>Your new passwords do not match!</p>";
+                    }
+                    $success = "";
+                    if(!empty($_GET['success'])) {
+                        $success = $_GET['success'];
+                    }
+                    if($success == 1) {
+                        echo "<p class='success'>Success!</p>";
+                    }
+                    ?>
                     <div class="row">
                         <div class="col-lg-4 col-md-4">
-                            <label for="name">Full Name</label>
+                            <label for="email">Email Address</label>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <input type="text" placeholder="Mustafa Hayeri" disabled>
+                            <input name="email" id ="emailchange" type="email" placeholder="<?php echo $_SESSION['email']; ?>" disabled>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <button>EDIT</button>
+                            <button type="button" id="emailchangebutton">EDIT</button>
                         </div>
                     </div>
 
                     <hr class="w-100 clearfix">
-
+                    <br>
+                    <p>Leave the password boxes empty if you do not want to change them.</p>
                     <div class="row">
                         <div class="col-lg-4 col-md-4">
-                            <label for="name">Email Address</label>
+                            <label for="password">Password</label>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <input type="email" placeholder="mustafahayeri@yahoo.com" disabled>
+                            <input name="pwd1" class="passwordchange" type="password" placeholder="********" disabled>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <button>EDIT</button>
+                            <button type="button" id="passwordchangebutton">EDIT</button>
                         </div>
                     </div>
-
-                    <hr class="w-100 clearfix">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4">
-                            <label for="name">Password</label>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <input type="password" placeholder="********" disabled>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <button>EDIT</button>
-                        </div>
-                    </div>
-                    <hr class="w-100 clearfix">
-
+                    <br>
                     <div class="row edit-field">
                         <div class="col-lg-4 col-md-4">
-                            <label for="name">Confirm Password</label>
+                            <label for="password">Confirm Password</label>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <input type="password" placeholder="********" disabled>
+                            <input name="pwd2" class="passwordchange" type="password" placeholder="********" disabled>
                         </div>
-                        <div class="col-lg-4 col-md-4">
-                            <button>EDIT</button>
-                        </div>
+
                     </div>
                     <hr class="w-100 clearfix">
-                    <button id="save-edits">SAVE CHANGES</button>
+                    <button type="submit" id="save-edits">SAVE CHANGES</button>
                 </form>
             </div>
         </div>
@@ -111,6 +117,7 @@ include 'footer.php';
 </section>
 -->
 
+        <script type="application/javascript" src="javascript/accountpage.js"></script>
 
     </body>
 

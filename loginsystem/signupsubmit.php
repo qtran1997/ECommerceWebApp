@@ -9,12 +9,10 @@
     $pwd2 = $_POST['pwd2'];
 
 
-    if($pwd1 != $pwd2)
-    {
+    if($pwd1 != $pwd2) {
         header("Location: ../signup.php?failureP=1");
     }
-    else
-    {
+    else {
         $pwd = $pwd1;
     }
 
@@ -35,18 +33,15 @@
         exit;
     }
 
-    if(!$row = mysqli_fetch_assoc($result))
-    {
+    if(!$row = mysqli_fetch_assoc($result)) {
         $sql = "INSERT INTO aclickerlogin (fname, lname, email, pwd) 
         VALUES ('$fname','$lname','$email', '$pwd')";
         $result = mysqli_query($conn, $sql);
         
-
         $_SESSION['id'] = $row['id'];
         header("Location: ../index.php");
     }
-    else
-    {
+    else {
         header("Location: ../signup.php?failureE=1");
     }
 ?>
