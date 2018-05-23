@@ -32,13 +32,15 @@ session_start();
                 <h4>Bundle Package</h4>
                 <div class="bundle-info">
                     <div class="row items">
-<!--
-                        <div class="col-lg-6 col-md-6">
-                            <img src="Images/card.png" alt="">
-                            <img src="Images/expiration.png" alt="">
-                            <img src="Images/cvv.jpg" alt="">
-                        </div>
+                        <!--
+
+<div class="col-lg-6 col-md-6">
+<img src="Images/card.png" alt="">
+<img src="Images/expiration.png" alt="">
+<img src="Images/cvv.jpg" alt="">
+</div>
 -->
+
                     </div>
                     <div class="row cart">
                         <div class="col-lg-4">
@@ -56,20 +58,10 @@ session_start();
                             <img src="Images/expiration.png" alt="">
                         </div>
                         <div class="col-lg-4">
+                            <h5>Step 2</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>$0.15</h5>
-                        </div>
-                    </div>
-                    <div class="row cart">
-                        <div class="col-lg-4">
-                            <img src="Images/cvv.jpg" alt="">
-                        </div>
-                        <div class="col-lg-4">
-                            <h5>Step 3</h5>
-                        </div>
-                        <div class="col-lg-4">
-                            <h5>$0.15</h5>
+                            <h5>$0.10</h5>
                         </div>
                     </div>
                     <div class="row cart">
@@ -80,7 +72,7 @@ session_start();
                             <h5>Step 3</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>$0.15</h5>
+                            <h5>$0.10</h5>
                         </div>
                     </div>
                     <div class="row cart">
@@ -88,10 +80,31 @@ session_start();
                             <img src="Images/cvv.jpg" alt="">
                         </div>
                         <div class="col-lg-4">
-                            <h5>Step 3</h5>
+                            <h5>Step 4</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>$0.15</h5>
+                            <h5>$0.10</h5>
+                        </div>
+                    </div>
+                    <div class="row cart">
+                        <div class="col-lg-4">
+                            <img src="Images/cvv.jpg" alt="">
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Step 5</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>$0.10</h5>
+                        </div>
+                    </div>
+                    <hr class="w-100 clearfix">
+
+                    <div class="row cart">
+                        <div class="offset-lg-4 col-lg-4">
+                            <h5>Total:</h5>
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>$0.40</h5>
                         </div>
                     </div>
                 </div>     
@@ -132,6 +145,20 @@ session_start();
                     </form>
                     <button>Checkout</button>
                 </div>
+                <h4>Or you can check out on another form!</h4>
+                <form action="stripesystem/stripe.php" method="POST">
+                    <script
+                            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="pk_live_xdV4AXHExAkbbKFcApLNROFp"
+                            data-amount="50"
+                            data-name="AmazonClicker.com"
+                            data-description="Amazon Clicker Charge"
+                            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                            data-locale="auto"
+                            data-zip-code="true"
+                            data-email="<?php echo $_SESSION['email']; ?>">
+                    </script>
+                </form>
             </div>
 
         </div>
