@@ -1,9 +1,7 @@
 <?php
 session_start();
 ?>
-<!DOCTYPE html>
 <html lang="en">
-
     <meta charset="UTF-8">
     <head>
         <meta charset="UTF-8" content="width=device-width, initial-scale=1">
@@ -13,16 +11,14 @@ session_start();
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:200" rel="stylesheet">
+
         <link rel="stylesheet" type="text/css" href="index.css">
 
-        <title>Contact Us!</title>
-
+        <title>Change Password</title>
     </head>
 
-    <body id="#contact-page">
+    <body>
 
-        <!-- NAVBAR -->
         <div class="nav-wrapper">
             <?php  
             if(isset($_SESSION['id'])) {
@@ -34,37 +30,38 @@ session_start();
             ?>
         </div>
 
-        <section class="contact-top">
-            <div class="contact-header-text">
-                <h2>Get In Touch</h2>
-                <hr class="w-75 clearfix d-md-none">
-                <p id="small-text">Have any questions? We'd love to help!</p>
+
+        <div class="account-profile">
+            <div class="heading">
+                <i class="fas fa-sign-in-alt"></i> Change Password
             </div>
-        </section>
+            <hr class="w-100 clearfix">
 
-        <div class="contact-container">
-            <p>Message Us</p>
-            <form action="">
-                <div class="user-info">
-                    <input type="text" class="input" placeholder="Full name" required>
-                    <input type="email" class="input" placeholder="Email address" required>
+            <p>Enter your email address so that we can help reset your password:</p>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <label for="email">Email Address</label>
                 </div>
 
-                <div class="message">
-                    <textarea name="message" class="area" id="message" required></textarea>
+
+                <div class="col-lg-4 col-md-4">
+                    <input type="email "for="email" placeholder="testemail@gmail.com" required>
                 </div>
 
-                <div class="send-info">
-                    <button class="btn btn-primary">Send Message</button>
+                <div class="col-lg-4 col-md-4">
+                   <a href="mailto:mustafahayeri@yahoo.com?subject=Click Clack Reset Password&body=Here is your reset code: 456353"><button class="btn btn-primary">Send Code</button></a>
                 </div>
-            </form>
+                <hr class="w-100 clearfix">
+
+
+            </div>
+
+
         </div>
-        <section class="footer">
-            <?php  
-            include 'footer.php';
-            ?>
-        </section>
+
 
 
     </body>
+
 </html>

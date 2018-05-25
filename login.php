@@ -14,13 +14,6 @@ session_start();
         <link rel="stylesheet" type="text/css" href="index.css"> 
 
         <title>Login</title>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('.menu h4').click(function() {
-                    $("nav ul").toggleClass("active");
-                })
-            })
-        </script>
     </head>
     <body id="formscreen">
 
@@ -62,7 +55,7 @@ session_start();
                         </p>
                         <p class="full">
                             <button>Log In</button>
-                            <a href="#">Forgot Password?</a>
+                            <a href="changepwd.php">Forgot Password?</a>
                         </p>
                         <div class="privacy">
                             By logging in, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>

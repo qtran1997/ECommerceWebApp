@@ -57,40 +57,67 @@ session_start();
                             <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
                             <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
                         </ul>
-                        <h3>Coming Soon</h3>
+                        <h3>Languages</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
+                            <li><i class="fas fa-play-circle"></i>6. Java (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>7. C++ (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>8. Python (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>9. C (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>10. The End (0:42)</li>
                         </ul>
 
-                        <h3>Coming Soon</h3>
+                        <h3>Data Types</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
+                            <li><i class="fas fa-play-circle"></i>11. Integers (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>12. Boolean (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>13. Float/Double (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>14. String (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>15. Quiz (0:42)</li>
                         </ul>
 
-                        <h3>Coming Soon</h3>
+                        <h3>Advanced Topics</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
+                            <li><i class="fas fa-play-circle"></i>16. Inheritance (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>17. Polymorphism (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>18. Classes (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>19. Objects (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>20. Constructors (0:42)</li>
                         </ul>
 
-                        <h3>Coming Soon</h3>
+                        <h3>Smashers</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
+                            <li><i class="fas fa-play-circle"></i>21. Westballz (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>22. Mew2King (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>23. Mang0 (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>24. Hungrybox (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>25. Armada (0:42)</li>
+                        </ul>
+
+                        <h3>Teachers</h3>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li><i class="fas fa-play-circle"></i>26. Alan Riggins (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>27. Steve Price (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>28. Ivan Bajic (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>29. Wei Wang (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>30. Guy Leonard (0:42)</li>
+                        </ul>
+
+                        <h3>Sorting Algorithms</h3>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li><i class="fas fa-play-circle"></i>31. Bubble Sort (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>32. Merge Sort (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>33. Quick Sort (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>34. Heap Sort (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>35. The End (0:42)</li>
+                        </ul>
+
+                        <h3>Data Structures</h3>
+                        <ul class="nav nav-divider nav-stacked">
+                            <li><i class="fas fa-play-circle"></i>36. Stacks/Queues (3:50)</li>
+                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>37. Hashtable (2:43)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>38. Binary Search Tree (4:45)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>39. Linked Lists (4:32)</li>
+                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>40. Final Project (0:42)</li>
                         </ul>
                     </nav>
                 </div>
@@ -120,7 +147,7 @@ session_start();
                         <div class="text-center">
                             <a href="signup.php"><button type="button" class="btn btn-primary">Register Now to Unlock</button></a>
                             <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">X</button>
-                            <p>If you already have an account, <a href="signup.php">sign in here</a></p>
+                            <p>If you already have an account, <a href="login.php">sign in here</a></p>
                         </div>
                     </div>
                 </div>
@@ -145,28 +172,10 @@ session_start();
             </div>
         </div>
 
-
-        <!--
-<section class="footer">
-<?php  
-include 'footer.php';
-?>
-</section>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <section class="footer">
+            <?php  
+            include 'footer.php';
+            ?>
+        </section>
     </body>
-
 </html>
