@@ -135,7 +135,7 @@ session_start();
 
         </section>
 
-        <div class="middle-e">
+        <section class="middle-e">
             <div class="middle-e-container">
                 <div class="middle-e-left">
                     <h2>Temp Text</h2>
@@ -153,7 +153,7 @@ session_start();
 
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="footer">
             <?php  
