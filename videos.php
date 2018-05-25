@@ -76,6 +76,10 @@ session_start();
                                     {
                                         echo 'id="video3"';
                                     }
+                                    else
+                                    {
+                                        echo 'data-toggle="modal" data-target="#purchaseModal"';
+                                    }
                                 }
                                 ?>
                                 ><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
@@ -91,6 +95,10 @@ session_start();
                                     {
                                         echo 'id="video4"';
                                     }
+                                    else
+                                    {
+                                        echo 'data-toggle="modal" data-target="#purchaseModal"';
+                                    }
                                 }
                                 ?>
                                 ><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
@@ -105,6 +113,10 @@ session_start();
                                     if($_SESSION['pb'] == 1)
                                     {
                                         echo 'id="video5"';
+                                    }
+                                    else
+                                    {
+                                        echo 'data-toggle="modal" data-target="#purchaseModal"';
                                     }
                                 }
                                 ?>
@@ -217,7 +229,18 @@ session_start();
                     </div>
                     <div class="modal-body video-login">
                         <div class="text-center">
-                            <a href="checkout.php"><button type="button" class="btn btn-primary">Purchase Now to Unlock</button></a>
+                            <a 
+                               <?php
+                               if(!isset($_SESSION['id']))
+                               {
+                                   echo 'href="login.php"';
+                               }
+                               else
+                               {
+                                   echo 'href="checkout.php"';
+                               }
+                               ?>
+                               ><button type="button" class="btn btn-primary">Purchase Now to Unlock</button></a>
                             <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">X</button>
                         </div>
                     </div>

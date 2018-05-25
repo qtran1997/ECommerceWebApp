@@ -20,5 +20,5 @@ $(document).ready(function () {
         $('#current-video').attr('src',"https://www.youtube.com/embed/8KPUE0_EDR0?rel=0&&load_iv_policy=3;controls=1&showinfo=0");
     });
 
-
+    
 });

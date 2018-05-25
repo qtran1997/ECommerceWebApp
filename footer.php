@@ -6,10 +6,6 @@
             <a href="contact.php"><p>Contact Us</p></a>
             <a href="#"><p>Terms of Use</p></a>
             <a href="#"><p>Privacy Policy</p></a>
-            <?php
-            if(!isset($_SESSION['id']))
-                echo '<a href="signup.php"><button class="btn btn-success">Let\'s Start</button></a>'
-            ?>
             <hr class="w-100 clearfix d-md-none hidden-sm hidden-md hidden-lg">
         </div>
 
