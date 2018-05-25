@@ -15,7 +15,7 @@ body {
     left: 0;
     width: 100%;
     padding: 10px 50px;
-    background: #2E4057;
+    background: #2F2D2E;
 }
 
 .navbar img {
@@ -56,34 +56,35 @@ body {
 section.top {
     width: 100%; 
     height: 100vh;
-    background: url(Images/water.jpeg);
+    background: url(Images/peopletapping.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 /*----------------------------------------------*/
-section.middle-first {
+section.middle-a {
     padding: 2.5rem;
+    border-top: 7px solid #FDB833;
 }
 
-section.middle-first h1 {
+section.middle-a h1 {
     font-weight: bold;
-    color: #29bea2;
+    color: #2E4057;
     margin: 0;
     text-align: center;
 }
 
-section.middle-first img {
+section.middle-a img {
     padding: 1rem;
 }
 
-section.middle-first button {
-    background: #cb2027;
+section.middle-a button {
+    background: #F18F01;
     width: 50%;
     color: #fff;
 }
 
-section.middle-first .wrap {
+section.middle-a .wrap {
     width: 100%;
     display: flex;
     align-items: center;
@@ -91,12 +92,12 @@ section.middle-first .wrap {
     margin: 3% 0;    
 }
 
-section.middle-first .wrap-text {
+section.middle-a .wrap-text {
     justify-content: center;
     font-size: 17px;
 }
 
-section.middle-first p {
+section.middle-a p {
     margin: 20px 0 0;
     padding: 0;
     font-size: 1em;
@@ -105,27 +106,131 @@ section.middle-first p {
 
 /*----------------------------------------------*/
 
-section.middle-second {
+section.middle-b {
     padding: 2.5rem;
+    background: #048BA8;
 }
 
-section.middle-second .ptext {
+section.middle-b .ptext {
     margin: 1rem;
+    color: #fff;
 }
 
-section.middle-second h1 {
+section.middle-b h1 {
     font-weight: bold;
     text-align: center;
-    color: #29bea2;
+    color: #2E4057;
 }
+
+/*----------------------------------------------*/
+section.middle-c {
+    border-top: 2px solid #004385;
+}
+
+.sub-button {
+    background: #F18F01;
+    color: #ffffff;
+}
+
+/* --------------------------------*/
+
+.middle-e-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 250px;
+    padding: 1em;
+}
+
+.middle-e-left {
+    border-bottom: 5px solid #F18F01;
+    background: #99C24D;
+    padding: 2em;
+    text-align: center;
+}
+
+.middle-e-left p {
+    margin: 0;
+}
+
+.middle-e-left h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.middle-e-right {
+    border-bottom: 5px solid #F18F01;
+    color: #fff;
+    padding: 2em;
+    background: #2E4057;
+}
+
+.middle-e-right h2 {
+    color: #F18F01;
+    text-decoration: underline;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 43% 56%;
+    grid-gap: 2em;
+    padding: 3.5rem;
+}
+
+.section-container h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
+    color: #720026;
+}
+
+.section-container .right-text ul li {
+    /*    list-style: none;*/
+    padding: 3px;
+}
+
+#tapping {
+    padding-top: 3%;
+    width: 60%;
+    max-height: 550px;
+    margin: 0 20%;
+}
+
+.left-text {
+    max-width: 450px;
+}
+
+.right-text {
+    max-width: 600px;
+}
+
+.sub-heading {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************************* FOOTER *************************/
 section.footer {
     padding: 25px 0;
     position: relative;
-    background: #2E4057;
+    background: #2F2D2E;
     color: #000;
-    border-top: 3px solid #29bea2;
+    border-top: 3px solid #99C24D;
     bottom: 0;
     left:0;
 }
@@ -133,13 +238,14 @@ section.footer {
 section.footer h1 {
     font-size: 22px;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     margin-top: 5px;
     margin-bottom: 10px;
     text-decoration: underline;
 }
 
 section.footer p {
+    color: #fff;
     margin: 0;
 }
 
@@ -158,24 +264,24 @@ section.footer button:hover {
 }
 
 section.footer a {
-    color: #000080;
+    color: #FBB13C;
     text-decoration: none;
 }
 
 .fa-facebook-square {
-    color: #3b5998;
+    color: #fff;
 }
 
 .fa-twitter-square {
-    color: #00aced;
+    color: #fff;
 }
 
 .fa-instagram {
-    color: #517fa4;
+    color: #fff;
 }
 
 .fa-linkedin {
-    color: #007bb6;
+    color: #fff;
 }
 
 section.footer .bottom-footer h3{
@@ -286,91 +392,89 @@ section.footer .bottom-footer h3{
 
 
 /************************* CONTACT *************************/
+#contact-page > * {
+    margin: 0;
+    padding: 0;
+}
 
-section.contact-content h2 {
+section.contact-top {
+    background: url(Images/tapping.jpg);
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+section.contact-top h2 {
     text-align: center;
-    padding: 10px;
-}
-
-section.contact-content {
-    height: auto;
-}
-
-#contact-left {
-    display: inline-block;
-    padding: 0;
-    margin-right: -5px;
-    vertical-align: top;
-    padding-left: 8%;
-    padding-right: 4%;
-    color: #888888;
-    border: none;
-}
-
-#contact-right {
-    display: inline-block;
-    padding: 0;
-    vertical-align: top;
-    border: none;
-}
-
-#contact-right form {
-    display: block;
-    margin-top: 0em;  
-}
-
-#contact-right form .form-header {
-    font-size: 18px;
-}
-
-#contact-right form .input-body {
-    margin-bottom: 3%;
-    width: 600px;
-    height: 60px;
-    font-size: 16px;
-    padding-left: 2%;
-    border: 2px solid #262626;
-    border-radius: 8px;
-}
-
-#contact-right form textarea {
-    height: 100px !important;
-}
-
-#contact-right form h4 {
-    font-size: 16px;
-}
-
-#contact-send {
-    width: 600px;
-    height: 60px;
-    background: #29bea2;
-    color: white;
-    border: none;
-    border-radius: 8px;
+    color: #fff;
+    font-size: 45px;
     font-weight: bold;
-    font-size: 18px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+section.contact-top p {
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    margin-top: -5px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+}
+
+.contact-container {
+    max-width: 800px;
+    height: 550px;
+    background: #fff;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(72,98,85,0.6);
+}
+
+.contact-container p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #486255;
+}
+
+.input, .area {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.user-info .input {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.user-info .input:last-child {
+    margin-right: 0;
+}
+
+.message .area {
+    height: 150px;
+}
+
+.send-info .btn {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto !important;
     cursor: pointer;
+    border-radius: 3px;
 }
-
-.card {
-    position: relative;
-    flex-direction: column;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border-radius: .25rem;
-}
-
-.card-body {
-    flex: 1 1 auto;
-    padding: 1.25rem;
-}
-
-.star {
-    color: #29bea2;
-}
-
 /************************* END OF CONTACT *************************/
 
 
@@ -632,24 +736,7 @@ section.contact-content {
     cursor: pointer;
 }
 
-
-
-
-
-/************************* END OF MODAL ACCOUONT FORMS FOR VIDEOS *************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
+/************************* END OF MODAL ACCOUNT FORMS FOR VIDEOS *************************/
 
 
 /************************* MEDIA QUERIES *************************/
