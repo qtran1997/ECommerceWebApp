@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if(isset($_SESSION['id']))
+{
+    
+}
 ?>
 <html lang="en">
     <head>

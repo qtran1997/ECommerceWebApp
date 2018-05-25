@@ -36,7 +36,7 @@ body {
 }
 
 .nav-link {
-    line-height: 30px;
+/*    line-height: 30px;*/
     color: #fff !important;
     padding: 5px 12px;
     text-decoration: none;
@@ -47,16 +47,18 @@ body {
 
 .nav-link:hover {
     background: #99C24D;
-    color: #000!important;
+    color: #000 !important;
     text-decoration: none;
 }
 
-
+.nav-item{
+    height:35px !important;
+}
 /************************* LOADING-TOP *************************/
 
 section.top {
     width: 100%; 
-    height: 100vh;
+    height: 85vh;
     background: url(Images/peopletapping.jpeg);
     background-size: cover;
     background-position: center;
@@ -720,21 +722,25 @@ section.contact-top p {
     font-size: 20px;
 }
 
-#video-login p {
+.video-login p {
     font-size: 14px;
 }
 
-#video-login button {
+.video-login button {
     margin: 0 auto;
     font-size: 13px;
     opacity: 0.8;
     margin-bottom: 16px;
 }
 
-#video-login button:hover {
+.video-login button:hover {
     transition: .7s;
     opacity: 1;
     cursor: pointer;
+}
+
+.modal-open {
+    padding-right: 0px !important;
 }
 
 /************************* END OF MODAL ACCOUNT FORMS FOR VIDEOS *************************/

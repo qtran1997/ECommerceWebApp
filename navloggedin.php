@@ -19,10 +19,10 @@
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-            <?php
-            $fname = $_SESSION['fname'];
-            echo '<li class="nav-item"><a class="nav-link" href="accountpage.php"> Hello, ' . $fname . '!</a></li>'
-            ?>
+            <li class="nav-item">
+                <a class="nav-link" href="accountpage.php"><?php echo ' Hello, ' . $_SESSION['fname'] ?></a>
+            </li>
+            
             <li class="nav-item">
                 <form action="loginsystem/logoutsubmit.php" method="POST">
                     <button class="nav-link">Log Out</button>

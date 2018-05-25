@@ -24,6 +24,7 @@
         $_SESSION['email'] = $row['email'];
         $_SESSION['fname'] = $row['fname'];
         $_SESSION['lname'] = $row['lname'];
+        $_SESSION['pb'] = $row['pb'];
     
         header("Location: ../accountpage.php");
 //        header("Location: ../index.php");

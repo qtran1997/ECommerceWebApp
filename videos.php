@@ -51,11 +51,64 @@ session_start();
                     <nav>
                         <h3>Clicker Setup</h3>
                         <ul class="nav nav-divider nav-stacked">
-                            <li><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
-                            <li data-toggle="modal" data-target="#myModal"><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
-                            <li data-toggle="modal" data-target="#purchaseModal"><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
+                            <li id="video1" ><i class="fas fa-play-circle"></i>1. Introduction (3:50)</li>
+                            <li 
+                                <?php
+                                if(!isset($_SESSION['id']))
+                                {
+                                    echo 'data-toggle="modal" data-target="#myModal"';
+                                }
+                                else
+                                {
+                                    echo 'id="video2"';
+                                }
+                                ?>
+                                ><i class="fas fa-play-circle"></i>2. Clicker Setup (2:43)</li>
+                            <li 
+                                <?php
+                                if(!isset($_SESSION['id']))
+                                {
+                                    echo 'data-toggle="modal" data-target="#purchaseModal"';
+                                }
+                                else
+                                {
+                                    if($_SESSION['pb'] == 1)
+                                    {
+                                        echo 'id="video3"';
+                                    }
+                                }
+                                ?>
+                                ><i class="fas fa-play-circle"></i>3. Using the Clicker (4:45)</li>
+                            <li 
+                                <?php
+                                if(!isset($_SESSION['id']))
+                                {
+                                    echo 'data-toggle="modal" data-target="#purchaseModal"';
+                                }
+                                else
+                                {
+                                    if($_SESSION['pb'] == 1)
+                                    {
+                                        echo 'id="video4"';
+                                    }
+                                }
+                                ?>
+                                ><i class="fas fa-play-circle"></i>4. Using the Clicker II (4:32)</li>
+                            <li 
+                                <?php
+                                if(!isset($_SESSION['id']))
+                                {
+                                    echo 'data-toggle="modal" data-target="#purchaseModal"';
+                                }
+                                else
+                                {
+                                    if($_SESSION['pb'] == 1)
+                                    {
+                                        echo 'id="video5"';
+                                    }
+                                }
+                                ?>
+                                ><i class="fas fa-play-circle"></i>5. The End (0:42)</li>
                         </ul>
                         <h3>Languages</h3>
                         <ul class="nav nav-divider nav-stacked">
@@ -125,7 +178,7 @@ session_start();
 
             <!-- VIDEO -->
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/tQx4lutEhok?rel=0&amp&load_iv_policy=3;controls=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe id="current-video" width="560" height="315" src="https://www.youtube.com/embed/tQx4lutEhok?rel=0&amp&load_iv_policy=3;controls=1&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
 
             <!--
@@ -143,7 +196,7 @@ session_start();
                         <h5 class="modal-title text-center"><i class="fas fa-lock"></i>
                             Lecture Content is Unavailable.</h5>
                     </div>
-                    <div class="modal-body" id="video-login">
+                    <div class="modal-body video-login">
                         <div class="text-center">
                             <a href="signup.php"><button type="button" class="btn btn-primary">Register Now to Unlock</button></a>
                             <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">X</button>
@@ -162,7 +215,7 @@ session_start();
                         <h5 class="modal-title text-center"><i class="fas fa-lock"></i>
                             Lecture Content is Unavailable.</h5>
                     </div>
-                    <div class="modal-body" id="video-login">
+                    <div class="modal-body video-login">
                         <div class="text-center">
                             <a href="checkout.php"><button type="button" class="btn btn-primary">Purchase Now to Unlock</button></a>
                             <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">X</button>
@@ -177,5 +230,7 @@ session_start();
             include 'footer.php';
             ?>
         </section>
+
+        <script type="application/javascript" src="javascript/videos.js"></script>
     </body>
 </html>
