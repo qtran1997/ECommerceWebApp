@@ -34,10 +34,10 @@
             <p>Email Us: <a href="#">sheekmedia@sdsu.edu</a></p>
             <p>Give us a call! <a href="#">555-555-5555</a></p>
             
-            <a href="https://www.facebook.com/SheekMedia"><i class="fab fa-facebook-square" style="font-size:32px;"></i></a>
-            <a href="https://twitter.com/SheekMedia"><i class="fab fa-twitter-square" style="font-size:32px"></i></a>
-            <a href="https://www.instagram.com/sheekmediaofficial/"><i class="fab fa-instagram" style="font-size:32px"></i></a>
-            <a href="https://www.linkedin.com"><i class="fab fa-linkedin" style="font-size:32px"></i></a>
+            <a href="https://www.facebook.com/SheekMedia"><i class="fab fa-facebook-square icon" style="font-size:32px;"></i></a>
+            <a href="https://twitter.com/SheekMedia"><i class="fab fa-twitter-square icon" style="font-size:32px"></i></a>
+            <a href="https://www.instagram.com/sheekmediaofficial/"><i class="fab fa-instagram icon" style="font-size:32px"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin icon" style="font-size:32px"></i></a>
             <hr class="w-100 clearfix d-md-none hidden-sm hidden-md hidden-lg">
         </div>
     </div>
