@@ -15,6 +15,7 @@ body {
     left: 0;
     height: 15vh;
     width: 100%;
+    height:15vh;
     padding: 10px 50px;
     background: #2F2D2E;
 }
@@ -36,7 +37,7 @@ body {
 }
 
 .nav-link {
-    line-height: 30px;
+/*    line-height: 30px;*/
     color: #fff !important;
     padding: 5px 12px;
     text-decoration: none;
@@ -47,14 +48,13 @@ body {
 
 .nav-link:hover {
     background: #99C24D;
-    color: #000!important;
+    color: #000 !important;
     text-decoration: none;
 }
 
 .nav-item {
     height: 35px !important;
 }
-
 
 /************************* LOADING-TOP *************************/
 
@@ -711,7 +711,9 @@ section.contact-top p {
     cursor: pointer;
 }
 
-
+.modal-open {
+    padding-right: 0px !important;
+}
 
 /************************* END OF MODAL ACCOUNT FORMS FOR VIDEOS *************************/
 
