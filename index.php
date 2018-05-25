@@ -93,6 +93,7 @@ session_start();
                     <p class="sub-heading">What You Need to Become Awesome</p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt reprehenderit ab illo itaque iusto obcaecati eveniet repellat incidunt autem.
                     <br>
+                    <br>
                     <p> <button class="btn sub-button">HELLO WORLD</button></p>
                 </div>
                 <div class="right-text">
@@ -115,6 +116,8 @@ session_start();
                     <h2>Left Text</h2>
                     <p class="sub-heading">Outwork the Competition</p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt reprehenderit ab illo itaque iusto obcaecati eveniet repellat incidunt autem.
+                    <br>
+                    <br>
                     <p> <button class="btn sub-button">HELLO WORLD</button></p>
                 </div>
                 <div class="right-text">

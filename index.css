@@ -13,7 +13,7 @@ body {
 .navbar {
     top: 0;
     left: 0;
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     padding: 10px 50px;
     background: #2F2D2E;
@@ -51,12 +51,16 @@ body {
     text-decoration: none;
 }
 
+.nav-item {
+    height: 35px !important;
+}
+
 
 /************************* LOADING-TOP *************************/
 
 section.top {
     width: 100%; 
-    height: 100vh;
+    height: 85vh;
     background: url(Images/peopletapping.jpeg);
     background-size: cover;
     background-position: center;
@@ -690,22 +694,24 @@ section.contact-top p {
     font-size: 20px;
 }
 
-#video-login p {
+.video-login p {
     font-size: 14px;
 }
 
-#video-login button {
+.video-login button {
     margin: 0 auto;
     font-size: 13px;
     opacity: 0.8;
     margin-bottom: 16px;
 }
 
-#video-login button:hover {
+.video-login button:hover {
     transition: .7s;
     opacity: 1;
     cursor: pointer;
 }
+
+
 
 /************************* END OF MODAL ACCOUNT FORMS FOR VIDEOS *************************/
 

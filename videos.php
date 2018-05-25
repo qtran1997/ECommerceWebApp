@@ -143,7 +143,7 @@ session_start();
                         <h5 class="modal-title text-center"><i class="fas fa-lock"></i>
                             Lecture Content is Unavailable.</h5>
                     </div>
-                    <div class="modal-body" id="video-login">
+                    <div class="modal-body video-login" >
                         <div class="text-center">
                             <a href="signup.php"><button type="button" class="btn btn-primary">Register Now to Unlock</button></a>
                             <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">X</button>
@@ -162,7 +162,7 @@ session_start();
                         <h5 class="modal-title text-center"><i class="fas fa-lock"></i>
                             Lecture Content is Unavailable.</h5>
                     </div>
-                    <div class="modal-body" id="video-login">
+                    <div class="modal-body video-login">
                         <div class="text-center">
                             <a href="checkout.php"><button type="button" class="btn btn-primary">Purchase Now to Unlock</button></a>
                             <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">X</button>
