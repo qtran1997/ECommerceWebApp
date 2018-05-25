@@ -13,6 +13,7 @@ body {
 .navbar {
     top: 0;
     left: 0;
+    height: 15vh;
     width: 100%;
     height:15vh;
     padding: 10px 50px;
@@ -51,9 +52,10 @@ body {
     text-decoration: none;
 }
 
-.nav-item{
-    height:35px !important;
+.nav-item {
+    height: 35px !important;
 }
+
 /************************* LOADING-TOP *************************/
 
 section.top {
@@ -64,7 +66,7 @@ section.top {
     background-position: center;
 }
 
-/*----------------------------------------------*/
+/************************* HOME PAGE SECTION A *************************/
 section.middle-a {
     padding: 2.5rem;
     border-top: 7px solid #FDB833;
@@ -107,7 +109,7 @@ section.middle-a p {
     text-align: center;
 }
 
-/*----------------------------------------------*/
+/************************* HOME PAGE SECTION B *************************/
 
 section.middle-b {
     padding: 2.5rem;
@@ -125,7 +127,7 @@ section.middle-b h1 {
     color: #2E4057;
 }
 
-/*----------------------------------------------*/
+/************************* HOME PAGE SECTION C *************************/
 section.middle-c {
     border-top: 2px solid #004385;
 }
@@ -135,8 +137,7 @@ section.middle-c {
     color: #ffffff;
 }
 
-/* --------------------------------*/
-
+/************************* HOME PAGE SECTION E *************************/
 .middle-e-container {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -187,7 +188,6 @@ section.middle-c {
 }
 
 .section-container .right-text ul li {
-    /*    list-style: none;*/
     padding: 3px;
 }
 
@@ -212,20 +212,6 @@ section.middle-c {
     font-size: 20px;
     text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /************************* FOOTER *************************/
 section.footer {
@@ -271,19 +257,7 @@ section.footer a {
     text-decoration: none;
 }
 
-.fa-facebook-square {
-    color: #fff;
-}
-
-.fa-twitter-square {
-    color: #fff;
-}
-
-.fa-instagram {
-    color: #fff;
-}
-
-.fa-linkedin {
+.icon {
     color: #fff;
 }
 
@@ -313,7 +287,6 @@ section.footer .bottom-footer h3{
 .video-header i {
     color: #048BA8;
 }
-
 
 #sidebar ul li {
     color: #FFF;
@@ -506,7 +479,6 @@ section.contact-top p {
 
 .wrapper >* {
     padding: 1.3rem;
-
 }
 
 .wrapper {
@@ -716,7 +688,7 @@ section.contact-top p {
 
 
 
-/************************* MODAL ACCOUONT FORMS FOR VIDEOS *************************/
+/************************* MODAL ACCOUNT FORMS FOR VIDEOS *************************/
 #unavailable-message h5 {
     margin: 0 auto;
     font-size: 20px;

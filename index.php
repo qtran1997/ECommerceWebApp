@@ -34,21 +34,18 @@ session_start();
         </div>
 
         <!-- 3 SECTIONS FOR LOADING PAGE -->
+
+        <!-- THE TOP SECTION CONSISTING OF THE COVER PHOTO -->
         <section class="top">
-
-
         </section>
 
+        <!-- THE MIDDLE SECTION CONSISTS OF ALL THE CONTENT ON THE PAGE, SPLIT INTO MULTIPLE SUB-SECTIONS -->
         <section class="middle-a">
-
-
             <div>
                 <hr class="w-100 clearfix d-md-none">
                 <h1>Innovation at your Fingertips</h1>
                 <hr class="w-100 clearfix d-md-none">
             </div>
-
-
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
@@ -73,11 +70,7 @@ session_start();
                     </div>
                 </div>
             </div>
-
-
-
         </section>
-
 
         <section class="middle-b">
 
@@ -90,7 +83,6 @@ session_start();
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt a assumenda quos, repellat sapiente aut enim, corporis commodi earum rerum quidem, vitae aspernatur et eos non, nemo soluta cum qui error neque porro veritatis ad adipisci amet! Iure dolores nihil magnam sapiente maiores modi repudiandae deleniti. Iusto maxime, est. Vel corporis natus reprehenderit iusto est impedit in adipisci aliquid voluptatum.</p>
-
             </div>
         </section>
 
@@ -100,6 +92,7 @@ session_start();
                     <h2>Left Text</h2>
                     <p class="sub-heading">What You Need to Become Awesome</p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt reprehenderit ab illo itaque iusto obcaecati eveniet repellat incidunt autem.
+                    <br>
                     <br>
                     <p> <button class="btn sub-button">HELLO WORLD</button></p>
                 </div>
@@ -117,14 +110,14 @@ session_start();
             </div>
         </section>
 
-
-
         <section class="middle-d">
             <div class="section-container">
                 <div class="left-text">
                     <h2>Left Text</h2>
                     <p class="sub-heading">Outwork the Competition</p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deserunt reprehenderit ab illo itaque iusto obcaecati eveniet repellat incidunt autem.
+                    <br>
+                    <br>
                     <p> <button class="btn sub-button">HELLO WORLD</button></p>
                 </div>
                 <div class="right-text">
@@ -150,7 +143,7 @@ session_start();
                     <p>click clack click</p>
                     <p>purchase today</p>
                     <br>
-                   <a href="checkout.php"><button class="btn sub-button">Click to buy</button></a> 
+                    <a href="checkout.php"><button class="btn sub-button">Click to buy</button></a> 
                 </div>
                 <div class="middle-e-right">
                     <h2> The Number 1 Trusted Product in the Market</h2>
@@ -162,15 +155,11 @@ session_start();
             </div>
         </div>
 
-
-
         <section class="footer">
             <?php  
             include 'footer.php';
             ?>
 
         </section>
-
-
     </body>
 </html>
