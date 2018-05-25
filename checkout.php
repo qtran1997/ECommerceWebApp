@@ -61,7 +61,7 @@ session_start();
                             <h5>Step 2</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>$0.10</h5>
+                            <h5>Sign up for free access!</h5>
                         </div>
                     </div>
                     <div class="row cart">
@@ -83,7 +83,7 @@ session_start();
                             <h5>Step 4</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>$0.10</h5>
+                            <h5>$0.20</h5>
                         </div>
                     </div>
                     <div class="row cart">
@@ -94,7 +94,7 @@ session_start();
                             <h5>Step 5</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>$0.10</h5>
+                            <h5>$0.20</h5>
                         </div>
                     </div>
                     <hr class="w-100 clearfix">
@@ -104,18 +104,19 @@ session_start();
                             <h5>Total:</h5>
                         </div>
                         <div class="col-lg-4">
-                            <h5>$0.40</h5>
+                            <h5>$0.50</h5>
                         </div>
                     </div>
                 </div>     
             </div>
+<!--
             <div class="billing">
                 <h4>Billing Information:</h4>
                 <div class="billing-info">
-                    <form action="">
+                    <form action="stripesystem/onsitecheckout.php" method="POST">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" required placeholder="Credit Card Number">
+                                <input name="cnumber" type="text" required placeholder="Credit Card Number">
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <img src="Images/card.png" alt="">
@@ -125,40 +126,64 @@ session_start();
                         </div>
                         <div class="row">
                             <div class="col-lg-3 col-md-3">
-                                <input type="password" required placeholder="CVC">
+                                <input name="ccvc" type="password" required placeholder="CVC">
                             </div>
                             <div class="col-lg-5 col-md-5">
-                                <input type="text" required placeholder="Month">
+                                <input name="cmonth" type="text" required placeholder="Month">
                             </div>
                             <div class="col-lg-4 col-md-4">
-                                <input type="text" required placeholder="Year">
+                                <input name="cyear" type="text" required placeholder="Year">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" required placeholder="Postal Code">
+                                <input name="cpostalcode" type="text" required placeholder="Postal Code">
                             </div>
                             <div class="col-lg-6 col-md-6">
-                                <input type="text" required placeholder="Country">
+                                <input name="ccountry" type="text" required placeholder="Country">
                             </div>
                         </div>
                     </form>
                     <button>Checkout</button>
                 </div>
-                <h4>Or you can check out on another form!</h4>
-                <form action="stripesystem/stripe.php" method="POST">
-                    <script
-                            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                            data-key="pk_live_xdV4AXHExAkbbKFcApLNROFp"
-                            data-amount="50"
-                            data-name="AmazonClicker.com"
-                            data-description="Amazon Clicker Charge"
-                            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-                            data-locale="auto"
-                            data-zip-code="true"
-                            data-email="<?php echo $_SESSION['email']; ?>">
-                    </script>
-                </form>
+-->
+                <br>
+                <br>
+                <br>
+                <div style = "text-align:center">
+                    <form style="display:inline-block; margin-right:12%" action="stripesystem/stripe.php" method="POST">
+                        <script
+                                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="pk_live_xdV4AXHExAkbbKFcApLNROFp"
+                                data-amount="50"
+                                data-name="AmazonClicker.com"
+                                data-description="Amazon Clicker Charge"
+                                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                                data-locale="auto"
+                                data-zip-code="true">
+                        </script>
+                    </form>
+                    <form style="display:inline-block" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <h4>Pay with Paypal!</h4>
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input id="paypalBusiness" type="hidden" name="business" value="XD">
+                        <input type="hidden" name="lc" value="US">
+                        <input type="hidden" name="item_name" value="Letter Frames">
+                        <input type="hidden" name="item_number" value="LF1">
+                        <input id="paypalPrice" type="hidden" name="amount" value="0.00">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="button_subtype" value="services">
+                        <input type="hidden" name="no_note" value="1">
+                        <input type="hidden" name="no_shipping" value="2">
+                        <input type="hidden" name="tax_rate" value="0.000">
+                        <input id="paypalShipping" type="hidden" name="shipping" value="0.00">
+                        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+
+                </div>
+
             </div>
 
         </div>

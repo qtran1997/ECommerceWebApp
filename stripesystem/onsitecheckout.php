@@ -3,6 +3,11 @@
 
   $token  = $_POST['stripeToken'];
   $email  = $_SESSION['email'];
+  $cvc = $_POST['ccvc'];
+  $number = $_POST['cnumber'];
+  $month = $_POST['cmonth'];
+  $cvc = $_POST['ccvc'];
+  $cvc = $_POST['ccvc'];
 
   $customer = \Stripe\Customer::create(array(
       'email' => $email,
